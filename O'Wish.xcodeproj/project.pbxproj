@@ -78,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				47143840205035E000CA1FD6 /* O'Wish */,
+				47143841205035E000CA1FD6 /* AppDelegate.swift */,
 				47143855205035E000CA1FD6 /* O'WishTests */,
 				47143860205035E000CA1FD6 /* O'WishUITests */,
 				4714383F205035E000CA1FD6 /* Products */,
@@ -97,12 +98,10 @@
 		47143840205035E000CA1FD6 /* O'Wish */ = {
 			isa = PBXGroup;
 			children = (
-				47143841205035E000CA1FD6 /* AppDelegate.swift */,
-				47143843205035E000CA1FD6 /* ViewController.swift */,
-				47143845205035E000CA1FD6 /* Main.storyboard */,
-				47143848205035E000CA1FD6 /* Assets.xcassets */,
-				4714384A205035E000CA1FD6 /* LaunchScreen.storyboard */,
-				4714384D205035E000CA1FD6 /* Info.plist */,
+				473A7432205054EA00CCF4EB /* Model */,
+				473A7431205054D700CCF4EB /* View */,
+				473A7430205054C200CCF4EB /* Controller */,
+				473A74332050552F00CCF4EB /* Resources */,
 			);
 			path = "O'Wish";
 			sourceTree = "<group>";
@@ -123,6 +122,39 @@
 				47143863205035E000CA1FD6 /* Info.plist */,
 			);
 			path = "O'WishUITests";
+			sourceTree = "<group>";
+		};
+		473A7430205054C200CCF4EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47143843205035E000CA1FD6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		473A7431205054D700CCF4EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47143845205035E000CA1FD6 /* Main.storyboard */,
+				4714384A205035E000CA1FD6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		473A7432205054EA00CCF4EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		473A74332050552F00CCF4EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47143848205035E000CA1FD6 /* Assets.xcassets */,
+				4714384D205035E000CA1FD6 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
