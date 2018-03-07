@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		47143842205035E000CA1FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143841205035E000CA1FD6 /* AppDelegate.swift */; };
-		47143844205035E000CA1FD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143843205035E000CA1FD6 /* ViewController.swift */; };
+		47143844205035E000CA1FD6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143843205035E000CA1FD6 /* SignInVC.swift */; };
 		47143847205035E000CA1FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47143845205035E000CA1FD6 /* Main.storyboard */; };
 		47143849205035E000CA1FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47143848205035E000CA1FD6 /* Assets.xcassets */; };
 		4714384C205035E000CA1FD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714384A205035E000CA1FD6 /* LaunchScreen.storyboard */; };
 		47143857205035E000CA1FD6 /* O_WishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143856205035E000CA1FD6 /* O_WishTests.swift */; };
 		47143862205035E000CA1FD6 /* O_WishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143861205035E000CA1FD6 /* O_WishUITests.swift */; };
+		473A74352050629200CCF4EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 473A74342050629200CCF4EB /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		4714383E205035E000CA1FD6 /* O'Wish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O'Wish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47143841205035E000CA1FD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47143843205035E000CA1FD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47143843205035E000CA1FD6 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		47143846205035E000CA1FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47143848205035E000CA1FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4714384B205035E000CA1FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		4714385D205035E000CA1FD6 /* O'WishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "O'WishUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47143861205035E000CA1FD6 /* O_WishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = O_WishUITests.swift; sourceTree = "<group>"; };
 		47143863205035E000CA1FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473A74342050629200CCF4EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		47143835205035E000CA1FD6 = {
 			isa = PBXGroup;
 			children = (
+				473A74342050629200CCF4EB /* Default-568h@2x.png */,
 				47143840205035E000CA1FD6 /* O'Wish */,
 				47143841205035E000CA1FD6 /* AppDelegate.swift */,
 				47143855205035E000CA1FD6 /* O'WishTests */,
@@ -127,7 +130,7 @@
 		473A7430205054C200CCF4EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				47143843205035E000CA1FD6 /* ViewController.swift */,
+				47143843205035E000CA1FD6 /* SignInVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4714384C205035E000CA1FD6 /* LaunchScreen.storyboard in Resources */,
+				473A74352050629200CCF4EB /* Default-568h@2x.png in Resources */,
 				47143849205035E000CA1FD6 /* Assets.xcassets in Resources */,
 				47143847205035E000CA1FD6 /* Main.storyboard in Resources */,
 			);
@@ -291,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47143844205035E000CA1FD6 /* ViewController.swift in Sources */,
+				47143844205035E000CA1FD6 /* SignInVC.swift in Sources */,
 				47143842205035E000CA1FD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYUA2B5BUP;
-				INFOPLIST_FILE = "O'Wish/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/O'Wish/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yogin.O-Wish";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,7 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYUA2B5BUP;
-				INFOPLIST_FILE = "O'Wish/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/O'Wish/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yogin.O-Wish";
 				PRODUCT_NAME = "$(TARGET_NAME)";
