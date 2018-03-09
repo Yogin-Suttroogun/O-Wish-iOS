@@ -14,6 +14,7 @@
 		4714384C205035E000CA1FD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714384A205035E000CA1FD6 /* LaunchScreen.storyboard */; };
 		47143857205035E000CA1FD6 /* O_WishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143856205035E000CA1FD6 /* O_WishTests.swift */; };
 		47143862205035E000CA1FD6 /* O_WishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143861205035E000CA1FD6 /* O_WishUITests.swift */; };
+		478B79B12052FD4A00C00AAB /* Affectionately_Yours.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 478B79B02052FD4A00C00AAB /* Affectionately_Yours.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4714385D205035E000CA1FD6 /* O'WishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "O'WishUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47143861205035E000CA1FD6 /* O_WishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = O_WishUITests.swift; sourceTree = "<group>"; };
 		47143863205035E000CA1FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		478B79B02052FD4A00C00AAB /* Affectionately_Yours.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Affectionately_Yours.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		473A74332050552F00CCF4EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				478B79B02052FD4A00C00AAB /* Affectionately_Yours.ttf */,
 				47143848205035E000CA1FD6 /* Assets.xcassets */,
 				4714384D205035E000CA1FD6 /* Info.plist */,
 			);
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4714384C205035E000CA1FD6 /* LaunchScreen.storyboard in Resources */,
+				478B79B12052FD4A00C00AAB /* Affectionately_Yours.ttf in Resources */,
 				47143849205035E000CA1FD6 /* Assets.xcassets in Resources */,
 				47143847205035E000CA1FD6 /* Main.storyboard in Resources */,
 			);

@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Affectionately_Yours.ttf">
+            <string>AffectionatelyYours</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
@@ -18,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fOF-Eo-IQK" userLabel="background">
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fOF-Eo-IQK" userLabel="background">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aladin" translatesAutoresizingMaskIntoConstraints="NO" id="Qpf-Ra-shg">
@@ -28,6 +33,12 @@
                                     <constraint firstAttribute="height" constant="120" id="x57-JM-xip"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O' Wish" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NG7-nz-hrY">
+                                <rect key="frame" x="0.0" y="188" width="375" height="37"/>
+                                <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -36,7 +47,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fOF-Eo-IQK" secondAttribute="bottom" id="Bgn-b6-t9E"/>
                             <constraint firstItem="fOF-Eo-IQK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Czf-sI-io0"/>
                             <constraint firstItem="Qpf-Ra-shg" firstAttribute="centerX" secondItem="fOF-Eo-IQK" secondAttribute="centerX" id="WbO-zc-NIo"/>
+                            <constraint firstItem="NG7-nz-hrY" firstAttribute="trailing" secondItem="fOF-Eo-IQK" secondAttribute="trailing" id="axu-mQ-ujH"/>
+                            <constraint firstItem="NG7-nz-hrY" firstAttribute="top" secondItem="Qpf-Ra-shg" secondAttribute="bottom" constant="8" id="bgR-Za-2yh"/>
+                            <constraint firstItem="NG7-nz-hrY" firstAttribute="centerX" secondItem="fOF-Eo-IQK" secondAttribute="centerX" id="nJW-7n-SZn"/>
                             <constraint firstItem="fOF-Eo-IQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qQo-4m-Mh0"/>
+                            <constraint firstItem="NG7-nz-hrY" firstAttribute="leading" secondItem="fOF-Eo-IQK" secondAttribute="leading" id="vRA-Sp-GCS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
