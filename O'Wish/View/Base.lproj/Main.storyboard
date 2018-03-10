@@ -95,7 +95,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="5LJ-wp-3eI" kind="show" id="LNU-BF-Seo"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8NY-Lo-TbT"/>
+                                    <segue destination="k79-Ou-aV0" kind="show" id="Vra-Ec-iHc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-uC-aOc">
@@ -157,6 +158,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtFld" destination="fjP-Uf-fsJ" id="Qrc-z4-frE"/>
+                        <outlet property="passwordTxtFld" destination="820-Ra-veq" id="LKd-om-XSz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -372,7 +377,6 @@
         <!--View Controller-->
         <scene sceneID="Rtb-ho-jz0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TsI-ud-to4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="dRf-8K-6lg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2fx-v9-aCb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -427,6 +431,7 @@
                         <viewLayoutGuide key="safeArea" id="jek-KT-0hO"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TsI-ud-to4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-884" y="28"/>
         </scene>
