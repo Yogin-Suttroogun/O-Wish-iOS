@@ -34,11 +34,55 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O' Wish" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NG7-nz-hrY">
-                                <rect key="frame" x="0.0" y="188" width="375" height="37"/>
+                                <rect key="frame" x="145.5" y="188" width="84.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-Uf-fsJ" customClass="DesignableTextField" customModule="O_Wish" customModuleProvider="target">
+                                <rect key="frame" x="54" y="318" width="266" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830105633805" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="user"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-3q-irn" customClass="DesignableTextField" customModule="O_Wish" customModuleProvider="target">
+                                <rect key="frame" x="54" y="381" width="266" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj8-F4-62h">
+                                <rect key="frame" x="54" y="458" width="255" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -47,11 +91,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fOF-Eo-IQK" secondAttribute="bottom" id="Bgn-b6-t9E"/>
                             <constraint firstItem="fOF-Eo-IQK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Czf-sI-io0"/>
                             <constraint firstItem="Qpf-Ra-shg" firstAttribute="centerX" secondItem="fOF-Eo-IQK" secondAttribute="centerX" id="WbO-zc-NIo"/>
-                            <constraint firstItem="NG7-nz-hrY" firstAttribute="trailing" secondItem="fOF-Eo-IQK" secondAttribute="trailing" id="axu-mQ-ujH"/>
                             <constraint firstItem="NG7-nz-hrY" firstAttribute="top" secondItem="Qpf-Ra-shg" secondAttribute="bottom" constant="8" id="bgR-Za-2yh"/>
                             <constraint firstItem="NG7-nz-hrY" firstAttribute="centerX" secondItem="fOF-Eo-IQK" secondAttribute="centerX" id="nJW-7n-SZn"/>
                             <constraint firstItem="fOF-Eo-IQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qQo-4m-Mh0"/>
-                            <constraint firstItem="NG7-nz-hrY" firstAttribute="leading" secondItem="fOF-Eo-IQK" secondAttribute="leading" id="vRA-Sp-GCS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -64,5 +106,7 @@
     <resources>
         <image name="aladin" width="567" height="567"/>
         <image name="background" width="500" height="374"/>
+        <image name="password" width="256" height="256"/>
+        <image name="user" width="256" height="256"/>
     </resources>
 </document>

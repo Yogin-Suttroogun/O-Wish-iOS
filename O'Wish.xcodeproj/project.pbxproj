@@ -15,6 +15,8 @@
 		47143857205035E000CA1FD6 /* O_WishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143856205035E000CA1FD6 /* O_WishTests.swift */; };
 		47143862205035E000CA1FD6 /* O_WishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143861205035E000CA1FD6 /* O_WishUITests.swift */; };
 		478B79B12052FD4A00C00AAB /* Affectionately_Yours.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 478B79B02052FD4A00C00AAB /* Affectionately_Yours.ttf */; };
+		478B79B32053057800C00AAB /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B79B22053057800C00AAB /* DesignableTextField.swift */; };
+		47952AEB2053AD5000163C75 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47952AEA2053AD5000163C75 /* DesignableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		47143861205035E000CA1FD6 /* O_WishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = O_WishUITests.swift; sourceTree = "<group>"; };
 		47143863205035E000CA1FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478B79B02052FD4A00C00AAB /* Affectionately_Yours.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Affectionately_Yours.ttf; sourceTree = "<group>"; };
+		478B79B22053057800C00AAB /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		47952AEA2053AD5000163C75 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +157,11 @@
 		473A74332050552F00CCF4EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				478B79B22053057800C00AAB /* DesignableTextField.swift */,
 				478B79B02052FD4A00C00AAB /* Affectionately_Yours.ttf */,
 				47143848205035E000CA1FD6 /* Assets.xcassets */,
 				4714384D205035E000CA1FD6 /* Info.plist */,
+				47952AEA2053AD5000163C75 /* DesignableButton.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -296,7 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				47143844205035E000CA1FD6 /* SignInVC.swift in Sources */,
+				478B79B32053057800C00AAB /* DesignableTextField.swift in Sources */,
 				47143842205035E000CA1FD6 /* AppDelegate.swift in Sources */,
+				47952AEB2053AD5000163C75 /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
