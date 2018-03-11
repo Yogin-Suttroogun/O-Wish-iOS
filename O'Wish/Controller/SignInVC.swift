@@ -15,14 +15,17 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     @IBAction func login(_ sender: Any) {
+        
         if(!isValidEmail(emailVal: emailTxtFld.text!)){
             alertMessage(header: "Invalid", msg: "Please enter a valid email address.")
             return
         }else{
-            if(!(isPasswordValid(pwdVal: passwordTxtFld.text!))){
+            if(!isPasswordValid(pwdVal: passwordTxtFld.text!)){
                 alertMessage(header: "Invalid", msg: "Please enter a valid password.")
                 return
             }
@@ -50,7 +53,6 @@ class SignInVC: UIViewController {
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", pwdRegEx)
         return passwordTest.evaluate(with: pwdVal)
     }
-    
     
     func alertMessage(header: String, msg: String) {
         // create the alert
