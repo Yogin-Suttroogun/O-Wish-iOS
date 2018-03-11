@@ -97,7 +97,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8NY-Lo-TbT"/>
-                                    <segue destination="5LJ-wp-3eI" kind="show" id="db2-Y5-xoW"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sM3-UL-7wf" userLabel="Separator">
@@ -167,11 +166,28 @@
                     <connections>
                         <outlet property="emailTxtFld" destination="fjP-Uf-fsJ" id="Qrc-z4-frE"/>
                         <outlet property="passwordTxtFld" destination="820-Ra-veq" id="LKd-om-XSz"/>
+                        <segue destination="5LJ-wp-3eI" kind="show" identifier="userProfile" id="da7-aX-Wf9"/>
+                        <segue destination="Bo3-Ba-OMj" kind="show" identifier="adminProfile" id="lXE-d7-wzO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="711.20000000000005" y="31.934032983508249"/>
+        </scene>
+        <!--AdminVC-->
+        <scene sceneID="nfH-It-w20">
+            <objects>
+                <viewController id="Bo3-Ba-OMj" customClass="AdminVC" customModule="O_Wish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jhz-UT-QvP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="K9j-c3-OWi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2Q-01-tT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="746"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="6N2-Nx-aoz">
@@ -192,7 +208,7 @@
         <!--Item 1-->
         <scene sceneID="5XA-J0-ThL">
             <objects>
-                <viewController id="3Q4-ci-VMX" sceneMemberID="viewController">
+                <viewController id="3Q4-ci-VMX" customClass="FeedVC" customModule="O_Wish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oid-90-jXW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -19,6 +19,8 @@
 		478B79B32053057800C00AAB /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B79B22053057800C00AAB /* DesignableTextField.swift */; };
 		47952AEB2053AD5000163C75 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47952AEA2053AD5000163C75 /* DesignableButton.swift */; };
 		47952AED2054000A00163C75 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47952AEC2054000A00163C75 /* SignUpVC.swift */; };
+		47C5A7412055572C00FDEE79 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A7402055572C00FDEE79 /* FeedVC.swift */; };
+		47C5A74420556A4A00FDEE79 /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A74320556A4A00FDEE79 /* AdminVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		478B79B22053057800C00AAB /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		47952AEA2053AD5000163C75 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		47952AEC2054000A00163C75 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		47C5A7402055572C00FDEE79 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		47C5A74320556A4A00FDEE79 /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				47143843205035E000CA1FD6 /* SignInVC.swift */,
 				47952AEC2054000A00163C75 /* SignUpVC.swift */,
 				4722CD7620550A01005A2484 /* ResetPasswordVC.swift */,
+				47C5A7402055572C00FDEE79 /* FeedVC.swift */,
+				47C5A74320556A4A00FDEE79 /* AdminVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				47143844205035E000CA1FD6 /* SignInVC.swift in Sources */,
+				47C5A7412055572C00FDEE79 /* FeedVC.swift in Sources */,
+				47C5A74420556A4A00FDEE79 /* AdminVC.swift in Sources */,
 				478B79B32053057800C00AAB /* DesignableTextField.swift in Sources */,
 				47143842205035E000CA1FD6 /* AppDelegate.swift in Sources */,
 				47952AED2054000A00163C75 /* SignUpVC.swift in Sources */,

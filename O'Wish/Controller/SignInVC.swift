@@ -21,20 +21,32 @@ class SignInVC: UIViewController {
     
     @IBAction func login(_ sender: Any) {
         
-        if(!isValidEmail(emailVal: emailTxtFld.text!)){
-            alertMessage(header: "Invalid", msg: "Please enter a valid email address.")
-            return
+        if(emailTxtFld.text! == "admin" && passwordTxtFld.text! == "admin"){
+            performSegue(withIdentifier: "adminProfile", sender: nil)
         }else{
-            if(!isPasswordValid(pwdVal: passwordTxtFld.text!)){
-                alertMessage(header: "Invalid", msg: "Please enter a valid password.")
+            if(!isValidEmail(emailVal: emailTxtFld.text!)){
+                alertMessage(header: "Invalid", msg: "Please enter a valid email address.")
                 return
+            }else{
+                if(!isPasswordValid(pwdVal: passwordTxtFld.text!)){
+                    alertMessage(header: "Invalid", msg: "Please enter a valid password.")
+                    return
+                }
             }
+            performSegue(withIdentifier: "userProfile", sender: nil)
         }
         
 //        let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
 //        spinner.startAnimating()
         
     }
+    //    TODO: Uncomment afterward when passing user information
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let userProfile = segue.destination as? FeedVC{
+//
+//        }else if let adminProfile = segue.destination as? AdminVC{
+//        }
+//    }
     
     func isValidEmail(emailVal:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
