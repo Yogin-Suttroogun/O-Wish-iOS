@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0514AC957E5BCFFCF39D0699 /* Pods_O_WishUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D8868080F8D265E0DD956A /* Pods_O_WishUITests.framework */; };
+		0D745305FF2153CCE4D965CA /* Pods_O_Wish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782CFBBDA4FDC69323045202 /* Pods_O_Wish.framework */; };
 		47143842205035E000CA1FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143841205035E000CA1FD6 /* AppDelegate.swift */; };
 		47143844205035E000CA1FD6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47143843205035E000CA1FD6 /* SignInVC.swift */; };
 		47143847205035E000CA1FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47143845205035E000CA1FD6 /* Main.storyboard */; };
@@ -22,6 +24,7 @@
 		47952AED2054000A00163C75 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47952AEC2054000A00163C75 /* SignUpVC.swift */; };
 		47C5A7412055572C00FDEE79 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A7402055572C00FDEE79 /* FeedVC.swift */; };
 		47C5A74420556A4A00FDEE79 /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5A74320556A4A00FDEE79 /* AdminVC.swift */; };
+		7024F1E2C719D003E313552A /* Pods_O_WishTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6888E3F126593CBC5A16649E /* Pods_O_WishTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08A15E1E5E43F512CA56786F /* Pods-O'WishUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-O'WishUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-O'WishUITests/Pods-O'WishUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37AD9ABA4AA4C9B88627D2C7 /* Pods-O'Wish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-O'Wish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-O'Wish/Pods-O'Wish.debug.xcconfig"; sourceTree = "<group>"; };
 		4714383E205035E000CA1FD6 /* O'Wish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O'Wish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47143841205035E000CA1FD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47143843205035E000CA1FD6 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -63,6 +68,13 @@
 		47952AEC2054000A00163C75 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		47C5A7402055572C00FDEE79 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		47C5A74320556A4A00FDEE79 /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
+		52D8868080F8D265E0DD956A /* Pods_O_WishUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_O_WishUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6888E3F126593CBC5A16649E /* Pods_O_WishTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_O_WishTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE48978F8B5F1A7D2E502CF /* Pods-O'WishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-O'WishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-O'WishTests/Pods-O'WishTests.debug.xcconfig"; sourceTree = "<group>"; };
+		782CFBBDA4FDC69323045202 /* Pods_O_Wish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_O_Wish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBACBB4E81FEC9D505B6D1E /* Pods-O'WishUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-O'WishUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-O'WishUITests/Pods-O'WishUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF78DD6229B4FC00D5CAB639 /* Pods-O'Wish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-O'Wish.release.xcconfig"; path = "Pods/Target Support Files/Pods-O'Wish/Pods-O'Wish.release.xcconfig"; sourceTree = "<group>"; };
+		F06C3D42CE74BF401C3C86DB /* Pods-O'WishTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-O'WishTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-O'WishTests/Pods-O'WishTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D745305FF2153CCE4D965CA /* Pods_O_Wish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7024F1E2C719D003E313552A /* Pods_O_WishTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0514AC957E5BCFFCF39D0699 /* Pods_O_WishUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,8 @@
 				47143855205035E000CA1FD6 /* O'WishTests */,
 				47143860205035E000CA1FD6 /* O'WishUITests */,
 				4714383F205035E000CA1FD6 /* Products */,
+				FB9E790F0462E9F92964290A /* Pods */,
+				566444580597F515718D9ED4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +198,29 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		566444580597F515718D9ED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				782CFBBDA4FDC69323045202 /* Pods_O_Wish.framework */,
+				6888E3F126593CBC5A16649E /* Pods_O_WishTests.framework */,
+				52D8868080F8D265E0DD956A /* Pods_O_WishUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB9E790F0462E9F92964290A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37AD9ABA4AA4C9B88627D2C7 /* Pods-O'Wish.debug.xcconfig */,
+				EF78DD6229B4FC00D5CAB639 /* Pods-O'Wish.release.xcconfig */,
+				6CE48978F8B5F1A7D2E502CF /* Pods-O'WishTests.debug.xcconfig */,
+				F06C3D42CE74BF401C3C86DB /* Pods-O'WishTests.release.xcconfig */,
+				08A15E1E5E43F512CA56786F /* Pods-O'WishUITests.debug.xcconfig */,
+				9CBACBB4E81FEC9D505B6D1E /* Pods-O'WishUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47143866205035E000CA1FD6 /* Build configuration list for PBXNativeTarget "O'Wish" */;
 			buildPhases = (
+				17A8DEFD01A9F3A81366A095 /* [CP] Check Pods Manifest.lock */,
 				4714383A205035E000CA1FD6 /* Sources */,
 				4714383B205035E000CA1FD6 /* Frameworks */,
 				4714383C205035E000CA1FD6 /* Resources */,
+				1C4FD35561EB2C19C0CA7B2E /* [CP] Embed Pods Frameworks */,
+				470120C267BB3CB47DBF182F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47143869205035E000CA1FD6 /* Build configuration list for PBXNativeTarget "O'WishTests" */;
 			buildPhases = (
+				15D131E5BA2D9D2C3BAB6BE4 /* [CP] Check Pods Manifest.lock */,
 				4714384E205035E000CA1FD6 /* Sources */,
 				4714384F205035E000CA1FD6 /* Frameworks */,
 				47143850205035E000CA1FD6 /* Resources */,
+				AE88B2660C8D53EDAA3483BC /* [CP] Embed Pods Frameworks */,
+				68CC50A5209D98044430D38E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4714386C205035E000CA1FD6 /* Build configuration list for PBXNativeTarget "O'WishUITests" */;
 			buildPhases = (
+				A4D6CE5DD71F674A6171DD6A /* [CP] Check Pods Manifest.lock */,
 				47143859205035E000CA1FD6 /* Sources */,
 				4714385A205035E000CA1FD6 /* Frameworks */,
 				4714385B205035E000CA1FD6 /* Resources */,
+				BD109B318F2833589010923B /* [CP] Embed Pods Frameworks */,
+				A4C88D9D5BEE4D31B9D2C798 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +359,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15D131E5BA2D9D2C3BAB6BE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-O'WishTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17A8DEFD01A9F3A81366A095 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-O'Wish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C4FD35561EB2C19C0CA7B2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-O'Wish/Pods-O'Wish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		470120C267BB3CB47DBF182F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-O'Wish/Pods-O'Wish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68CC50A5209D98044430D38E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-O'WishTests/Pods-O'WishTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C88D9D5BEE4D31B9D2C798 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-O'WishUITests/Pods-O'WishUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4D6CE5DD71F674A6171DD6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-O'WishUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE88B2660C8D53EDAA3483BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-O'WishTests/Pods-O'WishTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-O'WishTests/Pods-O'WishTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD109B318F2833589010923B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-O'WishUITests/Pods-O'WishUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4714383A205035E000CA1FD6 /* Sources */ = {
@@ -488,6 +687,7 @@
 		};
 		47143867205035E000CA1FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37AD9ABA4AA4C9B88627D2C7 /* Pods-O'Wish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +703,7 @@
 		};
 		47143868205035E000CA1FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF78DD6229B4FC00D5CAB639 /* Pods-O'Wish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -518,6 +719,7 @@
 		};
 		4714386A205035E000CA1FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE48978F8B5F1A7D2E502CF /* Pods-O'WishTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +737,7 @@
 		};
 		4714386B205035E000CA1FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06C3D42CE74BF401C3C86DB /* Pods-O'WishTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +755,7 @@
 		};
 		4714386D205035E000CA1FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A15E1E5E43F512CA56786F /* Pods-O'WishUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +772,7 @@
 		};
 		4714386E205035E000CA1FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CBACBB4E81FEC9D505B6D1E /* Pods-O'WishUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
