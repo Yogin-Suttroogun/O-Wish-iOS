@@ -1,0 +1,6 @@
+framework module Pods_OWish {
+  umbrella header "Pods-OWish-umbrella.h"
+
+  export *
+  module * { export * }
+}

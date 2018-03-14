@@ -1,6 +1,0 @@
-framework module Pods_O_WishUITests {
-  umbrella header "Pods-O'WishUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
