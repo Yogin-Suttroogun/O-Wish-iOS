@@ -38,10 +38,10 @@ class SignInVC: UIViewController {
             }
             
             
-//            let _ = Network.sharedInstance.login(email: emailTxtFld.text!, password: passwordTxtFld.text!, success: { (response) in
-//
-//                print(response)
-//            })
+            let _ = Network.sharedInstance.login(email: emailTxtFld.text!, password: passwordTxtFld.text!, success: { (response) in
+
+                print(response)
+            })
             
             performSegue(withIdentifier: "userProfile", sender: nil)
         }

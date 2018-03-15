@@ -24,7 +24,7 @@ public class Network {
 //    TODO: if need user create a model
 //    public var currentUser: User?
     
-    static let baseURLString = "http://localhost:8080/"
+    static let baseURLString = "http://192.168.2.1:8080/"
     static let userURLString = "users"
     
     let headers = [
@@ -33,7 +33,7 @@ public class Network {
     
 //    API Calls
     public func login(email: String, password: String, success: @escaping (String)->()) -> Request? {
-        let url:String = Network.baseURLString + Network.userURLString
+        let url:String = Network.baseURLString + email
         let params = [:] as [String: Any]
 //        let headers = [String]()
         
@@ -45,6 +45,8 @@ public class Network {
                 }else {
                     print("ERROR")
                 }
+                
+                print("heeerrrrreeee!!!!!! \(response.result)")
         }
         return nil
     }
