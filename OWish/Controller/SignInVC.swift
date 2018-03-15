@@ -24,16 +24,24 @@ class SignInVC: UIViewController {
         if(emailTxtFld.text! == "admin" && passwordTxtFld.text! == "admin"){
             performSegue(withIdentifier: "adminProfile", sender: nil)
         }else{
-//            if(!Validator.isValidEmail(emailVal: emailTxtFld.text!)){
-//                alertMessage(header: "Invalid", msg: "Please enter a valid email address.")
-//                return
-//            }else{
-//                if(!isPasswordValid(pwdVal: passwordTxtFld.text!)){
-//                    alertMessage(header: "Invalid", msg: "Please enter a valid password.")
-//                    return
-//                }
-//            }
             let isEmailValid = Validator().isValidEmail(email: emailTxtFld.text!)
+            let isPasswordValid = Validator().isPasswordValid(password: passwordTxtFld.text!)
+            
+            if !isEmailValid {
+                alertMessage(title: "Invalid", msg: "Please enter a valid email address.")
+                return
+            }
+
+            if !isPasswordValid {
+                alertMessage(title: "Invalid", msg: "Please enter a valid password.")
+                return
+            }
+            
+            
+//            let _ = Network.sharedInstance.login(email: emailTxtFld.text!, password: passwordTxtFld.text!, success: { (response) in
+//
+//                print(response)
+//            })
             
             performSegue(withIdentifier: "userProfile", sender: nil)
         }
@@ -43,10 +51,6 @@ class SignInVC: UIViewController {
         
     }
     
-    private func showAlert(alert: UIAlertController) {
-        UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
-    }
-    
     //    TODO: Uncomment afterward when passing user information
     //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     //        if let userProfile = segue.destination as? FeedVC{
@@ -54,5 +58,34 @@ class SignInVC: UIViewController {
     //        }else if let adminProfile = segue.destination as? AdminVC{
     //        }
     //    }
+    
+    func alertMessage(title: String, msg: String) {
+        // create the alert
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+
+}
+
+extension SignInVC: UITextFieldDelegate {
+    
+    /**
+     * Called when 'return' key pressed. return NO to ignore.
+     */
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    /**
+     * Called when the user click on the view (outside the UITextField).
+     */
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 }
 

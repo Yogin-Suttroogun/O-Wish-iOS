@@ -10,6 +10,8 @@ import UIKit
 
 class Utility: NSObject {
     
+    public static let sharedInstance = Utility()
+    
     func alertMessage(controller: UIViewController, title: String, msg: String) {
         // create the alert
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
@@ -18,5 +20,4 @@ class Utility: NSObject {
         // show the alert
         controller.present(alert, animated: true, completion: nil)
     }
-
 }
