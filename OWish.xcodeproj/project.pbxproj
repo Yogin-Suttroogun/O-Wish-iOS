@@ -16,6 +16,7 @@
 		473919F320598DAE00259EF2 /* Affectionately_Yours.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 473919F220598DAE00259EF2 /* Affectionately_Yours.ttf */; };
 		473919F520598E2D00259EF2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919F420598E2D00259EF2 /* DesignableButton.swift */; };
 		473919F72059907600259EF2 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919F62059907600259EF2 /* ItemDetailsVC.swift */; };
+		476B5DA42059F4CF0023233F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B5DA32059F4CF0023233F /* APIManager.swift */; };
 		47BC1FF0205989D100C07A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC1FEF205989D100C07A8E /* AppDelegate.swift */; };
 		47BC1FF5205989D100C07A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BC1FF3205989D100C07A8E /* Main.storyboard */; };
 		47BC1FF7205989D100C07A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BC1FF6205989D100C07A8E /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		473919F220598DAE00259EF2 /* Affectionately_Yours.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Affectionately_Yours.ttf; sourceTree = "<group>"; };
 		473919F420598E2D00259EF2 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		473919F62059907600259EF2 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		476B5DA32059F4CF0023233F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		47BC1FEC205989D100C07A8E /* OWish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BC1FEF205989D100C07A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47BC1FF4205989D100C07A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		476B5DA22059F4630023233F /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				476B5DA32059F4CF0023233F /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
 		47BC1FE3205989D100C07A8E = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		47BC1FEE205989D100C07A8E /* OWish */ = {
 			isa = PBXGroup;
 			children = (
+				476B5DA22059F4630023233F /* APIManager */,
 				473919E320598BDA00259EF2 /* Model */,
 				473919E220598BD500259EF2 /* View */,
 				473919E120598BC400259EF2 /* Controller */,
@@ -257,10 +268,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OWish/Pods-OWish-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -276,6 +299,7 @@
 			files = (
 				473919E520598C9500259EF2 /* SignInVC.swift in Sources */,
 				473919E720598CB600259EF2 /* SignUpVC.swift in Sources */,
+				476B5DA42059F4CF0023233F /* APIManager.swift in Sources */,
 				473919F120598D8400259EF2 /* DesignableTextField.swift in Sources */,
 				473919EB20598D0200259EF2 /* FeedVC.swift in Sources */,
 				47BC1FF0205989D100C07A8E /* AppDelegate.swift in Sources */,

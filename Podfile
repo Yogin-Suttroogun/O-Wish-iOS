@@ -6,6 +6,11 @@ target 'OWish' do
   use_frameworks!
 
   # Pods for OWish
-  pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'JGProgressHUD'
+  pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'p2.OAuth2', '~> 3.0'
 
 end
