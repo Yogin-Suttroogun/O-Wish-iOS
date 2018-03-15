@@ -9,10 +9,10 @@
 import UIKit
 
 class Validator: NSObject {
-    func isValidEmail(emailVal:String) -> Bool {
+    func isValidEmail(email:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: emailVal)
+        let emailValidate = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailValidate.evaluate(with: email)
     }
     
     /*
@@ -21,10 +21,10 @@ class Validator: NSObject {
      at least one lowercase
      8 characters total
      */
-    func isPasswordValid(pwdVal:String) -> Bool {
+    func isPasswordValid(password:String) -> Bool {
         let pwdRegEx = "(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}"
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", pwdRegEx)
-        return passwordTest.evaluate(with: pwdVal)
+        let passwordValidate = NSPredicate(format: "SELF MATCHES %@", pwdRegEx)
+        return passwordValidate.evaluate(with: password)
     }
     
     /*
