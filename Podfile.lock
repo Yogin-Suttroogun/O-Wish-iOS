@@ -2,31 +2,31 @@ PODS:
   - Alamofire (4.7.0)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
-  - AlamofireObjectMapper (4.1.0):
+  - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
-    - ObjectMapper (~> 2.0)
+    - ObjectMapper (~> 3.0)
   - JGProgressHUD (2.0)
-  - ObjectMapper (2.2.9)
-  - p2.OAuth2 (3.0.3)
+  - ObjectMapper (3.1.0)
+  - p2.OAuth2 (4.0.1)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
-  - AlamofireObjectMapper (~> 4.0)
+  - AlamofireObjectMapper
   - JGProgressHUD
-  - p2.OAuth2 (~> 3.0)
+  - p2.OAuth2
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
   JGProgressHUD: c402c0f41fc291ca7e33bba2f999118d9682dd9c
-  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
-  p2.OAuth2: 63d8d3e366ac2c43bfe8bfa13b42cfeb908c314e
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  p2.OAuth2: fdc2effef37793a8f775dd4760bc4c1ea906c956
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 791f9cd0e25f0fa9a5944f191a3b04cd2db8a6bc
+PODFILE CHECKSUM: a6d100adf6fc9146e8de1c8101ef44b782b6b412
 
 COCOAPODS: 1.4.0

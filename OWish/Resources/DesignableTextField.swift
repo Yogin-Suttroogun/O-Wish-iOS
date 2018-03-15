@@ -51,7 +51,7 @@ class DesignableTextField: UITextField {
             //            image is nill
             leftViewMode = .never
         }
-        attributedPlaceholder = NSAttributedString(string: placeholder != nil ? placeholder! : "", attributes: [NSAttributedStringKey.foregroundColor : tintColor])
+        attributedPlaceholder = NSAttributedString(string: placeholder != nil ? placeholder! : "", attributes: [NSForegroundColorAttributeName : tintColor])
     }
 }
 

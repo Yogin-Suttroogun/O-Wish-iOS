@@ -10,7 +10,7 @@ target 'OWish' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'JGProgressHUD'
-  pod 'AlamofireObjectMapper', '~> 4.0'
-  pod 'p2.OAuth2', '~> 3.0'
+  pod 'AlamofireObjectMapper'
+  pod 'p2.OAuth2'
 
 end
