@@ -59,7 +59,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="F3F-2M-jHN">
-                                <rect key="frame" x="138.5" y="232" width="99" height="37"/>
+                                <rect key="frame" x="146" y="232" width="84" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -520,7 +520,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-Yo-p3Z">
-                                <rect key="frame" x="131" y="232" width="115" height="37"/>
+                                <rect key="frame" x="139.5" y="232" width="96.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -543,7 +543,7 @@
                                     <action selector="register:" destination="MdF-tq-Uh9" eventType="touchUpInside" id="D4r-7B-gwA"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BN-iV-Qbu" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123@" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BN-iV-Qbu" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="419" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -563,7 +563,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-tX-sA0" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123@" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-tX-sA0" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="469" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -583,7 +583,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-Uf-ohY" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Keshika" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-Uf-ohY" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="319" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -603,7 +603,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ipt-lv-Vav" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ksuttroogun@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ipt-lv-Vav" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="369" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -661,6 +661,7 @@
                         <outlet property="emailTxtFld" destination="Ipt-lv-Vav" id="Tvm-D7-gRV"/>
                         <outlet property="fullNameTxtFld" destination="mqp-Uf-ohY" id="gH5-jQ-gCd"/>
                         <outlet property="passwordTxtFld" destination="6BN-iV-Qbu" id="N5c-BZ-ZaI"/>
+                        <segue destination="DZS-UO-rIG" kind="showDetail" identifier="userProfile" id="WYf-Ar-il3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlx-Ku-3qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -747,7 +748,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-ww-fwW">
-                                <rect key="frame" x="71.5" y="232" width="233" height="37"/>
+                                <rect key="frame" x="106.5" y="232" width="163.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -897,6 +898,7 @@
         <image name="user" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="WYf-Ar-il3"/>
         <segue reference="kRU-xi-KQs"/>
     </inferredMetricsTieBreakers>
 </document>

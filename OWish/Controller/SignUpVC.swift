@@ -62,11 +62,33 @@ class SignUpVC: UIViewController {
                     self.alertMessage(title: "Invalid", msg: "Please enter a another email as this one is taken up.")
                 }else{
                     //Post
+                    self.postNewUser()
                 }
         }
     }
     
     func postNewUser(){
+        let postUserURL = POST_NEW_USER
+        let params = [
+            "name" : fullNameTxtFld.text!,
+            "email" : emailTxtFld.text!,
+            "password" : passwordTxtFld.text!
+        ] as [String: Any]
+        
+        let headers = [
+            "Content-Type": "application/json",
+            "Accept" : "application/json"
+        ]
+        
+        Alamofire.request(postUserURL, method: .post, parameters: params, encoding: JSONEncoding.default , headers: headers)
+            .validate()
+            .responseJSON { (response) in
+                let resultValue = response.result.value! as! Bool
+                if resultValue {
+                    //perform navigation
+                    self.performSegue(withIdentifier: "userProfile", sender: nil)
+                }
+        }
         
     }
     
