@@ -59,7 +59,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="F3F-2M-jHN">
-                                <rect key="frame" x="146" y="232" width="84" height="37"/>
+                                <rect key="frame" x="138.5" y="232" width="99" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -520,7 +520,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-Yo-p3Z">
-                                <rect key="frame" x="139.5" y="232" width="96.5" height="37"/>
+                                <rect key="frame" x="130.5" y="232" width="115" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -748,7 +748,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-ww-fwW">
-                                <rect key="frame" x="106.5" y="232" width="163.5" height="37"/>
+                                <rect key="frame" x="72" y="232" width="233" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -767,6 +767,9 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetPassword:" destination="3Ge-yn-CbQ" eventType="touchUpInside" id="qtp-Is-7Yd"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNL-YM-m09" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="379" width="267" height="35"/>
@@ -858,6 +861,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kyc-AP-bSz"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTxtFld" destination="j0n-U6-mp2" id="zx6-7f-CMv"/>
+                        <outlet property="emailTxtFld" destination="AT5-uf-j7o" id="ODH-cw-7P8"/>
+                        <outlet property="passwordTxtFld" destination="GNL-YM-m09" id="dFd-Ke-lit"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW5-lw-pxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

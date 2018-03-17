@@ -35,8 +35,6 @@ class SignUpVC: UIViewController {
             return
         }
         
-        checkEmailValidityForUser()
-        
         if !isPasswordValid {
             alertMessage(title: "Invalid", msg: "Please enter a valid password.")
             return
@@ -47,7 +45,7 @@ class SignUpVC: UIViewController {
             return
         }
         
-        
+        checkEmailValidityForUser()
         
     }
     
@@ -87,6 +85,8 @@ class SignUpVC: UIViewController {
                 if resultValue {
                     //perform navigation
                     self.performSegue(withIdentifier: "userProfile", sender: nil)
+                }else{
+                    self.alertMessage(title: "Invalid", msg: "An error has occured. Please try again later.")
                 }
         }
         

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OWish/Controller/SignUpVC.swift"
-            timestampString = "543003464.722596"
+            timestampString = "543005287.487114"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "postNewUser()"
             landmarkType = "7">
          </BreakpointContent>
