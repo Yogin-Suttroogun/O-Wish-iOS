@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4710BBE0205C4A0E0048CD28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4710BBDF205C4A0E0048CD28 /* Constants.swift */; };
 		473919E520598C9500259EF2 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919E420598C9500259EF2 /* SignInVC.swift */; };
 		473919E720598CB600259EF2 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919E620598CB600259EF2 /* SignUpVC.swift */; };
 		473919E920598CE900259EF2 /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919E820598CE900259EF2 /* ResetPasswordVC.swift */; };
@@ -16,8 +17,6 @@
 		473919F320598DAE00259EF2 /* Affectionately_Yours.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 473919F220598DAE00259EF2 /* Affectionately_Yours.ttf */; };
 		473919F520598E2D00259EF2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919F420598E2D00259EF2 /* DesignableButton.swift */; };
 		473919F72059907600259EF2 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919F62059907600259EF2 /* ItemDetailsVC.swift */; };
-		476B5DA42059F4CF0023233F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B5DA32059F4CF0023233F /* APIManager.swift */; };
-		476B5DA62059F8E80023233F /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B5DA52059F8E80023233F /* Failure.swift */; };
 		476B5DA82059FA020023233F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B5DA72059FA020023233F /* Validator.swift */; };
 		476B5DAA205A09470023233F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B5DA9205A09470023233F /* Utility.swift */; };
 		47BC1FF0205989D100C07A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC1FEF205989D100C07A8E /* AppDelegate.swift */; };
@@ -29,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		07C49E3ED002F27578DAB220 /* Pods-OWish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWish.release.xcconfig"; path = "Pods/Target Support Files/Pods-OWish/Pods-OWish.release.xcconfig"; sourceTree = "<group>"; };
+		4710BBDF205C4A0E0048CD28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		473919E420598C9500259EF2 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		473919E620598CB600259EF2 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		473919E820598CE900259EF2 /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
@@ -38,8 +38,6 @@
 		473919F220598DAE00259EF2 /* Affectionately_Yours.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Affectionately_Yours.ttf; sourceTree = "<group>"; };
 		473919F420598E2D00259EF2 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		473919F62059907600259EF2 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
-		476B5DA32059F4CF0023233F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		476B5DA52059F8E80023233F /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
 		476B5DA72059FA020023233F /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		476B5DA9205A09470023233F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		47BC1FEC205989D100C07A8E /* OWish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWish.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +72,7 @@
 				473919F420598E2D00259EF2 /* DesignableButton.swift */,
 				476B5DA72059FA020023233F /* Validator.swift */,
 				476B5DA9205A09470023233F /* Utility.swift */,
+				4710BBDF205C4A0E0048CD28 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -107,15 +106,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		476B5DA22059F4630023233F /* APIManager */ = {
-			isa = PBXGroup;
-			children = (
-				476B5DA32059F4CF0023233F /* APIManager.swift */,
-				476B5DA52059F8E80023233F /* Failure.swift */,
-			);
-			path = APIManager;
-			sourceTree = "<group>";
-		};
 		47BC1FE3205989D100C07A8E = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +127,6 @@
 		47BC1FEE205989D100C07A8E /* OWish */ = {
 			isa = PBXGroup;
 			children = (
-				476B5DA22059F4630023233F /* APIManager */,
 				473919E320598BDA00259EF2 /* Model */,
 				473919E220598BD500259EF2 /* View */,
 				473919E120598BC400259EF2 /* Controller */,
@@ -308,12 +297,11 @@
 			files = (
 				473919E520598C9500259EF2 /* SignInVC.swift in Sources */,
 				473919E720598CB600259EF2 /* SignUpVC.swift in Sources */,
-				476B5DA42059F4CF0023233F /* APIManager.swift in Sources */,
 				473919F120598D8400259EF2 /* DesignableTextField.swift in Sources */,
 				476B5DA82059FA020023233F /* Validator.swift in Sources */,
-				476B5DA62059F8E80023233F /* Failure.swift in Sources */,
 				473919EB20598D0200259EF2 /* FeedVC.swift in Sources */,
 				476B5DAA205A09470023233F /* Utility.swift in Sources */,
+				4710BBE0205C4A0E0048CD28 /* Constants.swift in Sources */,
 				47BC1FF0205989D100C07A8E /* AppDelegate.swift in Sources */,
 				473919ED20598D2000259EF2 /* AdminVC.swift in Sources */,
 				473919F72059907600259EF2 /* ItemDetailsVC.swift in Sources */,

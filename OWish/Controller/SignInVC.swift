@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SignInVC: UIViewController {
     
@@ -36,28 +37,12 @@ class SignInVC: UIViewController {
                 alertMessage(title: "Invalid", msg: "Please enter a valid password.")
                 return
             }
-            
-            
-            let _ = Network.sharedInstance.login(email: emailTxtFld.text!, password: passwordTxtFld.text!, success: { (response) in
-
-                print(response)
-            })
-            
-            performSegue(withIdentifier: "userProfile", sender: nil)
         }
         
-        //        let spinner: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
-        //        spinner.startAnimating()
+        checkEmailValidity{}
+        
         
     }
-    
-    //    TODO: Uncomment afterward when passing user information
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        if let userProfile = segue.destination as? FeedVC{
-    //
-    //        }else if let adminProfile = segue.destination as? AdminVC{
-    //        }
-    //    }
     
     func alertMessage(title: String, msg: String) {
         // create the alert
@@ -66,6 +51,22 @@ class SignInVC: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         // show the alert
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    //    API Calls
+    func checkEmailValidity(completed: DownloadComplete){
+        let checkEmailURL = "\(CHECK_EMAIL_VALIDITY)\(emailTxtFld.text!)"
+        Alamofire.request(checkEmailURL, method: .get)
+            .validate()
+            .responseJSON{ response in
+                let resultValue = response.result.value! as! Bool
+                if resultValue {
+                    self.performSegue(withIdentifier: "userProfile", sender: nil)
+                }else{
+                    self.alertMessage(title: "Invalid credentials", msg: "Please check your email and password.")
+                }
+        }
+        completed()
     }
 
 }
