@@ -39,9 +39,8 @@ class SignInVC: UIViewController {
             }
         }
         
-        checkEmailValidity{}
-        
-        
+        //validating the credential for user and admin
+        checkForCorrectUserLogin()
     }
     
     func alertMessage(title: String, msg: String) {
@@ -54,8 +53,8 @@ class SignInVC: UIViewController {
     }
     
     //    API Calls
-    func checkEmailValidity(completed: DownloadComplete){
-        let checkEmailURL = "\(CHECK_EMAIL_VALIDITY)\(emailTxtFld.text!)"
+    func checkEmailValidityForUser(){
+        let checkEmailURL = "\(CHECK_VALIDITY_USER)\(emailTxtFld.text!)"
         Alamofire.request(checkEmailURL, method: .get)
             .validate()
             .responseJSON{ response in
@@ -66,9 +65,55 @@ class SignInVC: UIViewController {
                     self.alertMessage(title: "Invalid credentials", msg: "Please check your email and password.")
                 }
         }
-        completed()
     }
-
+    
+    func checkEmailValidityForAdmin(){
+        let checkEmailURL = "\(CHECK_VALIDITY_ADMIN)\(emailTxtFld.text!)"
+        Alamofire.request(checkEmailURL, method: .get)
+            .validate()
+            .responseJSON { (response) in
+                let resultValue = response.result.value! as! Bool
+                if resultValue {
+                    self.performSegue(withIdentifier: "userProfile", sender: nil)
+                }else{
+                    self.alertMessage(title: "Invalid credentials", msg: "Please check your email and password.")
+                }
+        }
+    }
+    
+    func checkForCorrectUserLogin(){
+        let checkUserURL = "\(CHECK_VALIDITY_USER)\(emailTxtFld.text!)/\(passwordTxtFld.text!)"
+        Alamofire.request(checkUserURL, method: .get)
+            .validate()
+            .responseJSON { (response) in
+                let resultValue = response.result.value! as! Bool
+                if resultValue{
+                    //perform navigation
+                    self.performSegue(withIdentifier: "userProfile", sender: nil)
+                }else{
+                    // check validity for admin
+                    self.checkForCorrectAdminLogin()
+                }
+        }
+    }
+    
+    
+    func checkForCorrectAdminLogin(){
+        let checkAdminURL = "\(CHECK_VALIDITY_ADMIN)\(emailTxtFld.text!)/\(passwordTxtFld.text!)"
+        Alamofire.request(checkAdminURL, method: .get)
+            .validate()
+            .responseJSON { (response) in
+                let resultValue = response.result.value! as! Bool
+                if resultValue{
+                    //perform navigation
+                    self.performSegue(withIdentifier: "adminProfile", sender: nil)
+                }else{
+                    self.alertMessage(title: "Invalid credentials", msg: "Please verify your email and password")
+                }
+        }
+    }
+    
+    
 }
 
 extension SignInVC: UITextFieldDelegate {
