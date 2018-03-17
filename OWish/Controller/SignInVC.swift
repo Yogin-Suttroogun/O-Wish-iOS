@@ -21,22 +21,17 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func login(_ sender: Any) {
+        let isEmailValid = Validator().isValidEmail(email: emailTxtFld.text!)
+        let isPasswordValid = Validator().isPasswordValid(password: passwordTxtFld.text!)
         
-        if(emailTxtFld.text! == "admin" && passwordTxtFld.text! == "admin"){
-            performSegue(withIdentifier: "adminProfile", sender: nil)
-        }else{
-            let isEmailValid = Validator().isValidEmail(email: emailTxtFld.text!)
-            let isPasswordValid = Validator().isPasswordValid(password: passwordTxtFld.text!)
-            
-            if !isEmailValid {
-                alertMessage(title: "Invalid", msg: "Please enter a valid email address.")
-                return
-            }
+        if !isEmailValid {
+            alertMessage(title: "Invalid", msg: "Please enter a valid email address.")
+            return
+        }
 
-            if !isPasswordValid {
-                alertMessage(title: "Invalid", msg: "Please enter a valid password.")
-                return
-            }
+        if !isPasswordValid {
+            alertMessage(title: "Invalid", msg: "Please enter a valid password.")
+            return
         }
         
         //validating the credential for user and admin
@@ -53,34 +48,6 @@ class SignInVC: UIViewController {
     }
     
     //    API Calls
-    func checkEmailValidityForUser(){
-        let checkEmailURL = "\(CHECK_VALIDITY_USER)\(emailTxtFld.text!)"
-        Alamofire.request(checkEmailURL, method: .get)
-            .validate()
-            .responseJSON{ response in
-                let resultValue = response.result.value! as! Bool
-                if resultValue {
-                    self.performSegue(withIdentifier: "userProfile", sender: nil)
-                }else{
-                    self.alertMessage(title: "Invalid credentials", msg: "Please check your email and password.")
-                }
-        }
-    }
-    
-    func checkEmailValidityForAdmin(){
-        let checkEmailURL = "\(CHECK_VALIDITY_ADMIN)\(emailTxtFld.text!)"
-        Alamofire.request(checkEmailURL, method: .get)
-            .validate()
-            .responseJSON { (response) in
-                let resultValue = response.result.value! as! Bool
-                if resultValue {
-                    self.performSegue(withIdentifier: "userProfile", sender: nil)
-                }else{
-                    self.alertMessage(title: "Invalid credentials", msg: "Please check your email and password.")
-                }
-        }
-    }
-    
     func checkForCorrectUserLogin(){
         let checkUserURL = "\(CHECK_VALIDITY_USER)\(emailTxtFld.text!)/\(passwordTxtFld.text!)"
         Alamofire.request(checkUserURL, method: .get)
