@@ -12,6 +12,7 @@ let BASE_URL = "http://192.168.100.3:8080/"
 let CHECK_USER_URL = "users/"
 let CHECK_ADMIN_URL = "admins/"
 let POST_NEW_USER_URL = "newUser"
+let PRODUCTS = "products"
 
 let headersKeyValue = [
     "Content-Type": "application/json",
@@ -23,5 +24,6 @@ typealias DownloadComplete = () -> ()
 let CHECK_VALIDITY_USER = "\(BASE_URL)\(CHECK_USER_URL)"
 let CHECK_VALIDITY_ADMIN = "\(BASE_URL)\(CHECK_ADMIN_URL)"
 let POST_NEW_USER = "\(BASE_URL)\(CHECK_USER_URL)\(POST_NEW_USER_URL)"
+let GET_PRODUCT = "\(BASE_URL)\(PRODUCTS)"
 
 

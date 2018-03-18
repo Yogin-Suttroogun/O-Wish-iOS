@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4710BBE0205C4A0E0048CD28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4710BBDF205C4A0E0048CD28 /* Constants.swift */; };
 		4716C0BA205E720000B33FFF /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716C0B9205E720000B33FFF /* MaterialView.swift */; };
+		4716C0BC205E780F00B33FFF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716C0BB205E780F00B33FFF /* Product.swift */; };
 		473919E520598C9500259EF2 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919E420598C9500259EF2 /* SignInVC.swift */; };
 		473919E720598CB600259EF2 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919E620598CB600259EF2 /* SignUpVC.swift */; };
 		473919E920598CE900259EF2 /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919E820598CE900259EF2 /* ResetPasswordVC.swift */; };
@@ -31,6 +32,7 @@
 		07C49E3ED002F27578DAB220 /* Pods-OWish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWish.release.xcconfig"; path = "Pods/Target Support Files/Pods-OWish/Pods-OWish.release.xcconfig"; sourceTree = "<group>"; };
 		4710BBDF205C4A0E0048CD28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4716C0B9205E720000B33FFF /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		4716C0BB205E780F00B33FFF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		473919E420598C9500259EF2 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		473919E620598CB600259EF2 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		473919E820598CE900259EF2 /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		473919E320598BDA00259EF2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4716C0BB205E780F00B33FFF /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				473919F72059907600259EF2 /* ItemDetailsVC.swift in Sources */,
 				473919E920598CE900259EF2 /* ResetPasswordVC.swift in Sources */,
 				473919F520598E2D00259EF2 /* DesignableButton.swift in Sources */,
+				4716C0BC205E780F00B33FFF /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

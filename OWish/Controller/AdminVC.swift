@@ -7,18 +7,29 @@
 //
 
 import UIKit
-import Alamofire
 
 class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    var product = Product()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         
+//        let product = Product(map: Map)
+        
+        product.downloadProductItem {
+            //setup UI to load download item
+            self.updateUI()
+        }
+        
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    func updateUI(){
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
