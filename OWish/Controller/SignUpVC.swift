@@ -73,12 +73,7 @@ class SignUpVC: UIViewController {
             "password" : passwordTxtFld.text!
         ] as [String: Any]
         
-        let headers = [
-            "Content-Type": "application/json",
-            "Accept" : "application/json"
-        ]
-        
-        Alamofire.request(postUserURL, method: .post, parameters: params, encoding: JSONEncoding.default , headers: headers)
+        Alamofire.request(postUserURL, method: .post, parameters: params, encoding: JSONEncoding.default , headers: headersKeyValue)
             .validate()
             .responseJSON { (response) in
                 let resultValue = response.result.value! as! Bool

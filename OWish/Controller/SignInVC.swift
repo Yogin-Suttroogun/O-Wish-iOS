@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignInVC.swift
 //  O'Wish
 //
 //  Created by SUTTROOGUN Yogin Kumar on 07/03/2018.
