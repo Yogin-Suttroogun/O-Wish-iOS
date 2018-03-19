@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OWish/Controller/SignUpVC.swift"
-            timestampString = "543064667.352384"
+            timestampString = "543152037.874294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OWish/Controller/AdminVC.swift"
-            timestampString = "543148248.879102"
+            timestampString = "543155010.736825"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -40,7 +40,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OWish/Controller/AdminVC.swift"
-            timestampString = "543148248.8791749"
+            timestampString = "543155010.736909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -54,12 +54,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OWish/Controller/AdminVC.swift"
-            timestampString = "543148248.879232"
+            timestampString = "543155010.736977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OWish/Controller/ResetPasswordVC.swift"
+            timestampString = "543155010.737125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "updatePassword()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

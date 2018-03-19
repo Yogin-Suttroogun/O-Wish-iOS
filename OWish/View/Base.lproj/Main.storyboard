@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123@" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iR2-YP-SJB" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="419" width="267" height="35"/>
+                                <rect key="frame" x="54" y="375" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -53,20 +53,20 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aladin" translatesAutoresizingMaskIntoConstraints="NO" id="Pxa-1q-QYY">
-                                <rect key="frame" x="128" y="104" width="120" height="120"/>
+                                <rect key="frame" x="128" y="60" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="4pK-UT-dYh"/>
                                     <constraint firstAttribute="height" constant="120" id="acq-yi-BTi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="F3F-2M-jHN">
-                                <rect key="frame" x="146" y="232" width="84" height="37"/>
+                                <rect key="frame" x="146" y="188" width="84" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ys@admin.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-QY-23m" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="359" width="267" height="35"/>
+                                <rect key="frame" x="54" y="315" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -86,7 +86,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klh-tf-31c" customClass="DesignableButton" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="499" width="267" height="35"/>
+                                <rect key="frame" x="54" y="455" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ODu-zq-v7D"/>
@@ -104,7 +104,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlg-B6-8YS" userLabel="Separator">
-                                <rect key="frame" x="187" y="563" width="1" height="16"/>
+                                <rect key="frame" x="187" y="519" width="1" height="16"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="51T-tI-e2L"/>
@@ -112,7 +112,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKa-1W-6ie">
-                                <rect key="frame" x="208" y="559" width="57" height="21"/>
+                                <rect key="frame" x="208" y="515" width="57" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="cvb-BK-8ob"/>
                                 </constraints>
@@ -126,7 +126,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abE-6O-JNy">
-                                <rect key="frame" x="101" y="559" width="66" height="21"/>
+                                <rect key="frame" x="101" y="515" width="66" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ZFv-uF-L5p"/>
                                 </constraints>
@@ -195,7 +195,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Uy8-nr-e1Q">
-                                <rect key="frame" x="63" y="79" width="249" height="26"/>
+                                <rect key="frame" x="63" y="35" width="249" height="26"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="2jk-zE-S42"/>
@@ -208,7 +208,7 @@
                                 <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="0.87312714039999995" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CZB-p9-7m5">
-                                <rect key="frame" x="16" y="124" width="343" height="543"/>
+                                <rect key="frame" x="16" y="80" width="343" height="587"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="160" id="puf-nj-okO" customClass="ItemCell" customModule="OWish" customModuleProvider="target">
@@ -333,21 +333,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VdH-uZ-WXH">
-                                <rect key="frame" x="16" y="89" width="100" height="100"/>
+                                <rect key="frame" x="16" y="45" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1WY-GR-9JT"/>
                                     <constraint firstAttribute="width" constant="100" id="xpC-fQ-ZKc"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kA7-BP-d8o">
-                                <rect key="frame" x="16" y="89" width="100" height="100"/>
+                                <rect key="frame" x="16" y="45" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="PCL-eH-RK6"/>
                                     <constraint firstAttribute="height" constant="100" id="s2o-PR-sls"/>
                                 </constraints>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9V-Lm-0CU" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="131" y="89" width="228" height="40"/>
+                                <rect key="frame" x="131" y="45" width="228" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5tl-gq-aKu"/>
@@ -362,7 +362,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnM-O7-NjH" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="131" y="149" width="228" height="40"/>
+                                <rect key="frame" x="131" y="105" width="228" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZyV-62-OjF"/>
@@ -377,7 +377,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zX4-Ho-S91" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="16" y="209" width="343" height="40"/>
+                                <rect key="frame" x="16" y="165" width="343" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="N0x-Oh-aIx"/>
@@ -392,7 +392,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKV-RE-y6A" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="16" y="269" width="343" height="40"/>
+                                <rect key="frame" x="16" y="225" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="f8j-hY-djt"/>
@@ -407,7 +407,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzd-0d-fUl" customClass="DesignableButton" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="80" y="379" width="215" height="35"/>
+                                <rect key="frame" x="80" y="335" width="215" height="35"/>
                                 <color key="backgroundColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Fsh-t8-f5G"/>
@@ -523,20 +523,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aladin" translatesAutoresizingMaskIntoConstraints="NO" id="fna-NB-3dt">
-                                <rect key="frame" x="127" y="104" width="120" height="120"/>
+                                <rect key="frame" x="127" y="60" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="de7-4V-ltE"/>
                                     <constraint firstAttribute="width" constant="120" id="ftL-2r-eGY"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-Yo-p3Z">
-                                <rect key="frame" x="140" y="232" width="96.5" height="37"/>
+                                <rect key="frame" x="140" y="188" width="96.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIA-Vt-xv5" customClass="DesignableButton" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="549" width="267" height="35"/>
+                                <rect key="frame" x="54" y="505" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="rr4-pk-UXL"/>
@@ -554,7 +554,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123@" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BN-iV-Qbu" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="419" width="267" height="35"/>
+                                <rect key="frame" x="54" y="375" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -574,7 +574,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123@" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-tX-sA0" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="469" width="267" height="35"/>
+                                <rect key="frame" x="54" y="425" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -594,7 +594,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Keshika" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-Uf-ohY" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="319" width="267" height="35"/>
+                                <rect key="frame" x="54" y="275" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -614,7 +614,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ksuttroogun@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ipt-lv-Vav" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="369" width="267" height="35"/>
+                                <rect key="frame" x="54" y="325" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -751,20 +751,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aladin" translatesAutoresizingMaskIntoConstraints="NO" id="QW9-sl-tLM">
-                                <rect key="frame" x="127" y="104" width="120" height="120"/>
+                                <rect key="frame" x="127" y="60" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="4Qe-am-pi8"/>
                                     <constraint firstAttribute="height" constant="120" id="wFZ-46-T7P"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-ww-fwW">
-                                <rect key="frame" x="106" y="232" width="163.5" height="37"/>
+                                <rect key="frame" x="106" y="188" width="163.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNL-YM-m09" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="379" width="267" height="35"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password1234567!" placeholder="Actual Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNL-YM-m09" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                                <rect key="frame" x="54" y="350" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -783,8 +783,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AT5-uf-j7o" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="329" width="267" height="35"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="yo.suttroogun@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AT5-uf-j7o" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                                <rect key="frame" x="54" y="300" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -803,8 +803,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7xu-cr-dbQ" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                                <rect key="frame" x="54" y="400" width="267" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="suS-iM-1Cw"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL5-nY-EXR" customClass="DesignableButton" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="464" width="267" height="35"/>
+                                <rect key="frame" x="54" y="470" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="9iU-4f-u9k"/>
@@ -827,28 +847,33 @@
                             <constraint firstItem="AMK-UW-gxv" firstAttribute="bottom" secondItem="kyc-AP-bSz" secondAttribute="bottom" id="0up-es-2D8"/>
                             <constraint firstItem="QW9-sl-tLM" firstAttribute="centerX" secondItem="AMK-UW-gxv" secondAttribute="centerX" id="27x-U7-00I"/>
                             <constraint firstItem="GNL-YM-m09" firstAttribute="top" secondItem="AT5-uf-j7o" secondAttribute="bottom" constant="15" id="2Pw-Y7-R9y"/>
+                            <constraint firstItem="7xu-cr-dbQ" firstAttribute="top" secondItem="GNL-YM-m09" secondAttribute="bottom" constant="15" id="83Q-vK-FtI"/>
                             <constraint firstItem="AMK-UW-gxv" firstAttribute="top" secondItem="JjC-gf-kUq" secondAttribute="top" id="D8f-Up-zAQ"/>
                             <constraint firstItem="GNL-YM-m09" firstAttribute="leading" secondItem="AT5-uf-j7o" secondAttribute="leading" id="Eb3-7x-vIA"/>
+                            <constraint firstItem="EL5-nY-EXR" firstAttribute="top" secondItem="7xu-cr-dbQ" secondAttribute="bottom" constant="35" id="Jcs-C7-cDB"/>
                             <constraint firstItem="kyc-AP-bSz" firstAttribute="trailing" secondItem="GNL-YM-m09" secondAttribute="trailing" constant="54" id="Mk3-Rb-fwv"/>
                             <constraint firstItem="GNL-YM-m09" firstAttribute="trailing" secondItem="AT5-uf-j7o" secondAttribute="trailing" id="OgX-Ja-AYF"/>
                             <constraint firstItem="kyc-AP-bSz" firstAttribute="trailing" secondItem="AT5-uf-j7o" secondAttribute="trailing" constant="54" id="RXF-og-DC2"/>
                             <constraint firstItem="GNL-YM-m09" firstAttribute="leading" secondItem="kyc-AP-bSz" secondAttribute="leading" constant="54" id="UMn-Wd-gyk"/>
                             <constraint firstItem="AMK-UW-gxv" firstAttribute="leading" secondItem="kyc-AP-bSz" secondAttribute="leading" id="Unf-l6-eZf"/>
-                            <constraint firstItem="AT5-uf-j7o" firstAttribute="top" secondItem="uhk-ww-fwW" secondAttribute="bottom" constant="60" id="XF0-3g-l1M"/>
+                            <constraint firstItem="AT5-uf-j7o" firstAttribute="top" secondItem="uhk-ww-fwW" secondAttribute="bottom" constant="75" id="XF0-3g-l1M"/>
+                            <constraint firstItem="7xu-cr-dbQ" firstAttribute="leading" secondItem="GNL-YM-m09" secondAttribute="leading" id="afz-dj-YwR"/>
                             <constraint firstItem="uhk-ww-fwW" firstAttribute="top" secondItem="QW9-sl-tLM" secondAttribute="bottom" constant="8" id="avT-vM-WfJ"/>
                             <constraint firstItem="QW9-sl-tLM" firstAttribute="top" secondItem="kyc-AP-bSz" secondAttribute="top" constant="40" id="cBD-Qo-ZNl"/>
-                            <constraint firstItem="EL5-nY-EXR" firstAttribute="top" secondItem="GNL-YM-m09" secondAttribute="bottom" constant="50" id="dXg-2a-7zx"/>
+                            <constraint firstItem="EL5-nY-EXR" firstAttribute="leading" secondItem="7xu-cr-dbQ" secondAttribute="leading" id="cCR-wg-DtA"/>
                             <constraint firstItem="AMK-UW-gxv" firstAttribute="trailing" secondItem="kyc-AP-bSz" secondAttribute="trailing" id="ePg-Ij-c0A"/>
-                            <constraint firstItem="EL5-nY-EXR" firstAttribute="leading" secondItem="GNL-YM-m09" secondAttribute="leading" id="gLF-YE-Koe"/>
                             <constraint firstItem="uhk-ww-fwW" firstAttribute="centerX" secondItem="AMK-UW-gxv" secondAttribute="centerX" id="gz8-5c-juc"/>
-                            <constraint firstItem="EL5-nY-EXR" firstAttribute="trailing" secondItem="GNL-YM-m09" secondAttribute="trailing" id="iyx-0y-AXM"/>
+                            <constraint firstItem="EL5-nY-EXR" firstAttribute="trailing" secondItem="7xu-cr-dbQ" secondAttribute="trailing" id="mRY-Ay-1q8"/>
                             <constraint firstItem="AT5-uf-j7o" firstAttribute="leading" secondItem="kyc-AP-bSz" secondAttribute="leading" constant="54" id="s4O-Mx-woY"/>
+                            <constraint firstItem="7xu-cr-dbQ" firstAttribute="trailing" secondItem="GNL-YM-m09" secondAttribute="trailing" id="zIj-Xm-aKf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kyc-AP-bSz"/>
                     </view>
                     <connections>
                         <outlet property="emailTxtFld" destination="AT5-uf-j7o" id="ODH-cw-7P8"/>
+                        <outlet property="newPasswordTxtFld" destination="7xu-cr-dbQ" id="b8T-Fb-gdG"/>
                         <outlet property="passwordTxtFld" destination="GNL-YM-m09" id="dFd-Ke-lit"/>
+                        <segue destination="eSl-ig-lHK" kind="show" identifier="userProfile" id="VXA-3H-10x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW5-lw-pxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -893,5 +918,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="WYf-Ar-il3"/>
         <segue reference="kRU-xi-KQs"/>
+        <segue reference="VXA-3H-10x"/>
     </inferredMetricsTieBreakers>
 </document>
