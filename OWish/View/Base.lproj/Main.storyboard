@@ -211,7 +211,7 @@
                                 <rect key="frame" x="16" y="124" width="343" height="543"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="160" id="puf-nj-okO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="160" id="puf-nj-okO" customClass="ItemCell" customModule="OWish" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="puf-nj-okO" id="jVP-kw-AN4">
@@ -281,6 +281,12 @@
                                                 <constraint firstItem="WXC-88-mxj" firstAttribute="top" secondItem="jVP-kw-AN4" secondAttribute="topMargin" id="ugb-G6-3HM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemDescription" destination="Cto-iH-XUD" id="LEG-00-UjE"/>
+                                            <outlet property="itemImage" destination="GMm-xO-Dkl" id="KfB-n3-nZW"/>
+                                            <outlet property="itemPrice" destination="JpI-SY-Xd4" id="bRL-wO-c8u"/>
+                                            <outlet property="itemTitle" destination="cGr-yM-w8q" id="tJD-AL-Lxu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

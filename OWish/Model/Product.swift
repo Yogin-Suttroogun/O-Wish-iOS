@@ -56,7 +56,11 @@ class Product {
     }
 
     
-    func downloadProductItem(completed: @escaping DownloadComplete){
+    func downloadProductItem(completed: @escaping DownloadComplete)-> Array<Product>{
+        var product: Product
+        product = Product()
+        var products = [Product]()
+        
         let getProductURL = GET_PRODUCT
         Alamofire.request(getProductURL, method: .get)
             .validate()
@@ -65,26 +69,28 @@ class Product {
                 if let dict = result.value as? [Dictionary<String, AnyObject>]{
                     if let title = dict[0]["title"] as? String{
                         self._title = title
-                        print(self._title)
                     }
                     if let price = dict[0]["price"] as? Int{
                         self._price = price
-                        print(self._price)
                     }
                     if let description = dict[0]["description"] as? String{
                         self._description = description
-                        print(self._description)
                     }
                     if let picture = dict[0]["picture"] as? String{
                         self._picture = picture
-                        print(self._picture)
                     }
                     if let supplier = dict[0]["supplier"] as? String{
                         self._supplier = supplier
-                        print(self._supplier)
+                    }
+                    
+                    for obj in dict{
+                        products.append(product)
+                        print(obj)
                     }
                 }
         }
         completed()
+        
+        return products
     }
 }

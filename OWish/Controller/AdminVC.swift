@@ -17,11 +17,10 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         
-//        let product = Product(map: Map)
-        
         product.downloadProductItem {
             //setup UI to load download item
             self.updateUI()
+            
         }
         
         tableView.dataSource = self
@@ -40,8 +39,11 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return 6
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as? ItemCell{
+            return cell
+        }else{
+            return ItemCell()
+        }
     }
 }
 
