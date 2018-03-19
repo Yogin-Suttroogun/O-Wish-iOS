@@ -8,7 +8,7 @@
 
 import Foundation
 
-let BASE_URL = "http://192.168.2.11:8080/"
+let BASE_URL = "http://192.168.100.3:8080/"
 let CHECK_USER_URL = "users/"
 let CHECK_ADMIN_URL = "admins/"
 let POST_NEW_USER_URL = "newUser"

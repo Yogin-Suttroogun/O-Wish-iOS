@@ -57,8 +57,6 @@ class Product {
 
     
     func downloadProductItem(completed: @escaping ([Product]) -> Void){
-        var product: Product
-        product = Product()
         var products = [Product]()
         
         let getProductURL = GET_PRODUCT
@@ -67,23 +65,29 @@ class Product {
             .responseJSON { (response) in
                 let result = response.result
                 if let dict = result.value as? [Dictionary<String, AnyObject>]{
-                    if let title = dict[0]["title"] as? String{
-                        product._title = String(title)
-                    }
-                    if let price = dict[0]["price"] as? Int{
-                        product._price = price
-                    }
-                    if let description = dict[0]["description"] as? String{
-                        product._description = description
-                    }
-                    if let picture = dict[0]["picture"] as? String{
-                        product._picture = picture
-                    }
-                    if let supplier = dict[0]["supplier"] as? String{
-                        product._supplier = supplier
-                    }
+                    var count : Int = 0
                     
                     for obj in dict{
+                        var product: Product
+                        product = Product()
+                        
+                        if let title = dict[count]["title"] as? String{
+                            product._title = String(title)
+                        }
+                        if let price = dict[count]["price"] as? Int{
+                            product._price = price
+                        }
+                        if let description = dict[count]["description"] as? String{
+                            product._description = description
+                        }
+                        if let picture = dict[count]["picture"] as? String{
+                            product._picture = picture
+                        }
+                        if let supplier = dict[count]["supplier"] as? String{
+                            product._supplier = supplier
+                        }
+                        
+                        count += 1
                         products.append(product)
                     }
                     completed(products)

@@ -219,10 +219,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXC-88-mxj">
-                                                    <rect key="frame" x="15" y="11" width="313" height="138"/>
+                                                    <rect key="frame" x="15" y="11" width="313" height="130"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="GMm-xO-Dkl">
-                                                            <rect key="frame" x="8" y="19" width="100" height="100"/>
+                                                            <rect key="frame" x="8" y="15" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="Xxh-9M-s4u"/>
                                                                 <constraint firstAttribute="width" constant="100" id="ouJ-TN-Qeb"/>
@@ -247,7 +247,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some day i'll own this car you just have to wait and watch." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Cto-iH-XUD">
-                                                            <rect key="frame" x="116" y="66" width="189" height="64"/>
+                                                            <rect key="frame" x="116" y="66" width="189" height="56"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="0.54845355309999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -257,7 +257,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="JpI-SY-Xd4" secondAttribute="trailing" constant="8" id="9tz-Tu-sVP"/>
                                                         <constraint firstItem="JpI-SY-Xd4" firstAttribute="leading" secondItem="GMm-xO-Dkl" secondAttribute="trailing" constant="8" id="FBq-ba-A4m"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GMm-xO-Dkl" secondAttribute="bottom" constant="15" id="R0h-kT-DXq"/>
+                                                        <constraint firstItem="GMm-xO-Dkl" firstAttribute="top" secondItem="WXC-88-mxj" secondAttribute="top" constant="15" id="Tgs-ep-yL4"/>
                                                         <constraint firstItem="GMm-xO-Dkl" firstAttribute="centerY" secondItem="WXC-88-mxj" secondAttribute="centerY" id="cbw-Dn-dtX"/>
+                                                        <constraint firstItem="GMm-xO-Dkl" firstAttribute="leading" secondItem="WXC-88-mxj" secondAttribute="leading" constant="8" id="dTu-bY-dxM"/>
                                                         <constraint firstAttribute="trailing" secondItem="Cto-iH-XUD" secondAttribute="trailing" constant="8" id="fND-kH-5vb"/>
                                                         <constraint firstItem="Cto-iH-XUD" firstAttribute="top" secondItem="JpI-SY-Xd4" secondAttribute="bottom" constant="8" id="hKl-r7-xBi"/>
                                                         <constraint firstItem="cGr-yM-w8q" firstAttribute="top" secondItem="WXC-88-mxj" secondAttribute="top" constant="8" id="idb-ST-Up4"/>
@@ -265,6 +268,7 @@
                                                         <constraint firstItem="Cto-iH-XUD" firstAttribute="leading" secondItem="GMm-xO-Dkl" secondAttribute="trailing" constant="8" id="rU4-0j-eMu"/>
                                                         <constraint firstItem="JpI-SY-Xd4" firstAttribute="top" secondItem="cGr-yM-w8q" secondAttribute="bottom" constant="8" id="sGd-CA-5NF"/>
                                                         <constraint firstAttribute="bottom" secondItem="Cto-iH-XUD" secondAttribute="bottom" constant="8" id="tHa-XB-ypG"/>
+                                                        <constraint firstItem="cGr-yM-w8q" firstAttribute="leading" secondItem="GMm-xO-Dkl" secondAttribute="trailing" constant="8" id="vSm-J0-IM7"/>
                                                         <constraint firstItem="cGr-yM-w8q" firstAttribute="leading" secondItem="GMm-xO-Dkl" secondAttribute="trailing" constant="8" id="zdg-h7-wdg"/>
                                                         <constraint firstAttribute="trailing" secondItem="cGr-yM-w8q" secondAttribute="trailing" constant="8" id="zyF-fm-KFa"/>
                                                     </constraints>
