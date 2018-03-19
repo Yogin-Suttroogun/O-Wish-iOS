@@ -56,7 +56,7 @@ class Product {
     }
 
     
-    func downloadProductItem(completed: @escaping DownloadComplete)-> Array<Product>{
+    func downloadProductItem(completed: @escaping ([Product]) -> Void){
         var product: Product
         product = Product()
         var products = [Product]()
@@ -68,29 +68,27 @@ class Product {
                 let result = response.result
                 if let dict = result.value as? [Dictionary<String, AnyObject>]{
                     if let title = dict[0]["title"] as? String{
-                        self._title = title
+                        product._title = String(title)
                     }
                     if let price = dict[0]["price"] as? Int{
-                        self._price = price
+                        product._price = price
                     }
                     if let description = dict[0]["description"] as? String{
-                        self._description = description
+                        product._description = description
                     }
                     if let picture = dict[0]["picture"] as? String{
-                        self._picture = picture
+                        product._picture = picture
                     }
                     if let supplier = dict[0]["supplier"] as? String{
-                        self._supplier = supplier
+                        product._supplier = supplier
                     }
                     
                     for obj in dict{
                         products.append(product)
-                        print(obj)
                     }
+                    completed(products)
                 }
         }
-        completed()
         
-        return products
     }
 }

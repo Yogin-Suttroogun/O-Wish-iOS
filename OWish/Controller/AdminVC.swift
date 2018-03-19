@@ -12,19 +12,20 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     var product = Product()
+    var products = [Product]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         
-        product.downloadProductItem {
-            //setup UI to load download item
-            self.updateUI()
-            
-        }
-        
         tableView.dataSource = self
         tableView.delegate = self
+        
+        
+        product.downloadProductItem { (product) in
+            self.products = product
+            self.tableView.reloadData()
+        }
     }
     
     func updateUI(){
@@ -36,10 +37,12 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return products.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as? ItemCell{
+            let product = products[indexPath.row]
+            cell.configureCell(product: product)
             return cell
         }else{
             return ItemCell()

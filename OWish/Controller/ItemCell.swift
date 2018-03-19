@@ -16,8 +16,13 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var itemDescription: UILabel!
     
     func configureCell(product: Product){
-        itemTitle.text = "\(product._title)"
-        itemPrice.text = "\(product._price)"
-        itemDescription.text = "\(product._description)"
+        itemTitle.text = "\(product._title!)"
+        itemPrice.text = "$ \(product._price!)"
+        itemDescription.text = "\(product._description!)"
+        
+        if let decodedData = Data(base64Encoded: product._picture, options: .ignoreUnknownCharacters){
+            let image = UIImage(data: decodedData)
+            itemImage.image = image
+        }
     }
 }
