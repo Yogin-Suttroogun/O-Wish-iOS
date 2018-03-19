@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class ItemDetailsVC: UIViewController {
     
     @IBOutlet weak var itemImage: UIButton!
+    @IBOutlet weak var titleTxtFld: DesignableTextField!
+    @IBOutlet weak var priceTxtFld: DesignableTextField!
+    @IBOutlet weak var descriptionTxtFld: DesignableTextField!
+    @IBOutlet weak var supplierTxtFld: DesignableTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +23,86 @@ class ItemDetailsVC: UIViewController {
         if let topItem = self.navigationController?.navigationBar.topItem{
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         }
+    }
+    
+    
+    @IBAction func save(_ sender: Any) {
+        // Validation for all fields
+        let isDescriptionValid = Validator().isValidName(string: descriptionTxtFld.text!)
+        let isSupplierValid = Validator().isValidName(string: supplierTxtFld.text!)
+        
+        if !isDescriptionValid {
+            alertMessage(title: "Invalid", msg: "Please enter a valid description.")
+            return
+        }
+        
+        if !isSupplierValid{
+            alertMessage(title: "Invalid", msg: "Please enter a valid supplier.")
+            return
+        }
+        
+        postNewItem()
+        
+    }
+    
+    func postNewItem(){
+        let postNewItemURL = NEW_ITEM
+        let params = [
+            "title":titleTxtFld.text!,
+            "price":priceTxtFld.text!,
+            "description":descriptionTxtFld.text!,
+            "picture":"",
+            "supplier":supplierTxtFld.text!,
+        ] as [String: Any]
+        
+        Alamofire.request(postNewItemURL, method: .post, parameters: params, encoding: JSONEncoding.default , headers: headersKeyValue)
+            .validate()
+            .responseJSON { (response) in
+                let resultValue = response.result.value! as! Bool
+                if resultValue {
+                    //perform navigation
+                    
+                    let alert = UIAlertController(title: "Success", message: "One item has been successfully inserted.", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+                        self.performSegue(withIdentifier: "adminConsole", sender: nil)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }else{
+                    self.alertMessage(title: "Invalid", msg: "An error has occured. Please try again later.")
+                }
+        }
+        
+    }
+    
+    
+    
+    func alertMessage(title: String, msg: String) {
+        // create the alert
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+}
+
+extension ItemDetailsVC: UITextFieldDelegate {
+    
+    /**
+     * Called when 'return' key pressed. return NO to ignore.
+     */
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    /**
+     * Called when the user click on the view (outside the UITextField).
+     */
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }
