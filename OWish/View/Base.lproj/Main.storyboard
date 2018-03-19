@@ -763,50 +763,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL5-nY-EXR" customClass="DesignableButton" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="509" width="267" height="35"/>
-                                <color key="backgroundColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="9iU-4f-u9k"/>
-                                </constraints>
-                                <state key="normal" title="Confirm">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="resetPassword:" destination="3Ge-yn-CbQ" eventType="touchUpInside" id="qtp-Is-7Yd"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNL-YM-m09" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="379" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="a2h-bF-auE"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j0n-U6-mp2" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="54" y="429" width="267" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="59M-CJ-5FZ"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -841,20 +803,33 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL5-nY-EXR" customClass="DesignableButton" customModule="OWish" customModuleProvider="target">
+                                <rect key="frame" x="54" y="464" width="267" height="35"/>
+                                <color key="backgroundColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9iU-4f-u9k"/>
+                                </constraints>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetPassword:" destination="3Ge-yn-CbQ" eventType="touchUpInside" id="qtp-Is-7Yd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="j0n-U6-mp2" firstAttribute="leading" secondItem="kyc-AP-bSz" secondAttribute="leading" constant="54" id="0RK-Az-hT8"/>
                             <constraint firstItem="AMK-UW-gxv" firstAttribute="bottom" secondItem="kyc-AP-bSz" secondAttribute="bottom" id="0up-es-2D8"/>
                             <constraint firstItem="QW9-sl-tLM" firstAttribute="centerX" secondItem="AMK-UW-gxv" secondAttribute="centerX" id="27x-U7-00I"/>
                             <constraint firstItem="GNL-YM-m09" firstAttribute="top" secondItem="AT5-uf-j7o" secondAttribute="bottom" constant="15" id="2Pw-Y7-R9y"/>
-                            <constraint firstItem="j0n-U6-mp2" firstAttribute="top" secondItem="GNL-YM-m09" secondAttribute="bottom" constant="15" id="6pM-qe-E5o"/>
                             <constraint firstItem="AMK-UW-gxv" firstAttribute="top" secondItem="JjC-gf-kUq" secondAttribute="top" id="D8f-Up-zAQ"/>
                             <constraint firstItem="GNL-YM-m09" firstAttribute="leading" secondItem="AT5-uf-j7o" secondAttribute="leading" id="Eb3-7x-vIA"/>
-                            <constraint firstItem="j0n-U6-mp2" firstAttribute="leading" secondItem="GNL-YM-m09" secondAttribute="leading" id="GDo-bu-rGN"/>
                             <constraint firstItem="kyc-AP-bSz" firstAttribute="trailing" secondItem="GNL-YM-m09" secondAttribute="trailing" constant="54" id="Mk3-Rb-fwv"/>
-                            <constraint firstItem="EL5-nY-EXR" firstAttribute="leading" secondItem="j0n-U6-mp2" secondAttribute="leading" id="NT0-vL-h7D"/>
-                            <constraint firstItem="EL5-nY-EXR" firstAttribute="top" secondItem="j0n-U6-mp2" secondAttribute="bottom" constant="45" id="OEP-6y-2d3"/>
                             <constraint firstItem="GNL-YM-m09" firstAttribute="trailing" secondItem="AT5-uf-j7o" secondAttribute="trailing" id="OgX-Ja-AYF"/>
                             <constraint firstItem="kyc-AP-bSz" firstAttribute="trailing" secondItem="AT5-uf-j7o" secondAttribute="trailing" constant="54" id="RXF-og-DC2"/>
                             <constraint firstItem="GNL-YM-m09" firstAttribute="leading" secondItem="kyc-AP-bSz" secondAttribute="leading" constant="54" id="UMn-Wd-gyk"/>
@@ -862,17 +837,16 @@
                             <constraint firstItem="AT5-uf-j7o" firstAttribute="top" secondItem="uhk-ww-fwW" secondAttribute="bottom" constant="60" id="XF0-3g-l1M"/>
                             <constraint firstItem="uhk-ww-fwW" firstAttribute="top" secondItem="QW9-sl-tLM" secondAttribute="bottom" constant="8" id="avT-vM-WfJ"/>
                             <constraint firstItem="QW9-sl-tLM" firstAttribute="top" secondItem="kyc-AP-bSz" secondAttribute="top" constant="40" id="cBD-Qo-ZNl"/>
-                            <constraint firstItem="j0n-U6-mp2" firstAttribute="trailing" secondItem="GNL-YM-m09" secondAttribute="trailing" id="ckB-T4-rEu"/>
-                            <constraint firstItem="EL5-nY-EXR" firstAttribute="trailing" secondItem="j0n-U6-mp2" secondAttribute="trailing" id="d54-N5-TQ9"/>
+                            <constraint firstItem="EL5-nY-EXR" firstAttribute="top" secondItem="GNL-YM-m09" secondAttribute="bottom" constant="50" id="dXg-2a-7zx"/>
                             <constraint firstItem="AMK-UW-gxv" firstAttribute="trailing" secondItem="kyc-AP-bSz" secondAttribute="trailing" id="ePg-Ij-c0A"/>
-                            <constraint firstItem="kyc-AP-bSz" firstAttribute="trailing" secondItem="j0n-U6-mp2" secondAttribute="trailing" constant="54" id="gSG-HC-wNV"/>
+                            <constraint firstItem="EL5-nY-EXR" firstAttribute="leading" secondItem="GNL-YM-m09" secondAttribute="leading" id="gLF-YE-Koe"/>
                             <constraint firstItem="uhk-ww-fwW" firstAttribute="centerX" secondItem="AMK-UW-gxv" secondAttribute="centerX" id="gz8-5c-juc"/>
+                            <constraint firstItem="EL5-nY-EXR" firstAttribute="trailing" secondItem="GNL-YM-m09" secondAttribute="trailing" id="iyx-0y-AXM"/>
                             <constraint firstItem="AT5-uf-j7o" firstAttribute="leading" secondItem="kyc-AP-bSz" secondAttribute="leading" constant="54" id="s4O-Mx-woY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kyc-AP-bSz"/>
                     </view>
                     <connections>
-                        <outlet property="confirmPasswordTxtFld" destination="j0n-U6-mp2" id="zx6-7f-CMv"/>
                         <outlet property="emailTxtFld" destination="AT5-uf-j7o" id="ODH-cw-7P8"/>
                         <outlet property="passwordTxtFld" destination="GNL-YM-m09" id="dFd-Ke-lit"/>
                     </connections>
