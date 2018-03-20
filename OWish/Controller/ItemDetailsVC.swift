@@ -43,6 +43,11 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             descriptionTxtFld.text = item._description
             supplierTxtFld.text = item._supplier
             titleTxtFld.isUserInteractionEnabled = false
+            
+            if let decodedData = Data(base64Encoded: item._picture, options: .ignoreUnknownCharacters){
+                let image = UIImage(data: decodedData)
+                itemImage.image = image
+            }
         }
     }
     
@@ -120,11 +125,12 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     func updateExistingItem(){
         let updateItemURL = UPDATE_ITEM
         let priceString: String = (priceTxtFld.text?.replacingOccurrences(of: "$", with: ""))!
+        encodeImage(img: itemImage.image)
         let params = [
             "title":titleTxtFld.text!,
             "price":priceString,
             "description":descriptionTxtFld.text!,
-            "picture":"",
+            "picture":encodedString,
             "supplier":supplierTxtFld.text!,
             ] as [String: Any]
         
