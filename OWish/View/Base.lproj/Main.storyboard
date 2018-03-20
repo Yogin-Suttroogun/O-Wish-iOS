@@ -483,6 +483,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="01g-J6-am2" firstAttribute="top" secondItem="PPf-1V-xQe" secondAttribute="top" constant="65" id="3xC-CK-MJc"/>
                             <constraint firstItem="01g-J6-am2" firstAttribute="centerX" secondItem="1Fo-O5-rUE" secondAttribute="centerX" id="JgH-Ic-nxX"/>
