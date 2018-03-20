@@ -9,15 +9,17 @@
 import UIKit
 import Alamofire
 
-class ItemDetailsVC: UIViewController {
+class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var itemImage: UIButton!
+    @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var titleTxtFld: DesignableTextField!
     @IBOutlet weak var priceTxtFld: DesignableTextField!
     @IBOutlet weak var descriptionTxtFld: DesignableTextField!
     @IBOutlet weak var supplierTxtFld: DesignableTextField!
     
     var itemToEdit: Product?
+    var imagePicker: UIImagePickerController!
+    var encodedString: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,9 @@ class ItemDetailsVC: UIViewController {
         if let topItem = self.navigationController?.navigationBar.topItem{
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         }
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         
         if itemToEdit != nil{
             loadItemData()
@@ -41,6 +46,22 @@ class ItemDetailsVC: UIViewController {
         }
     }
     
+    @IBAction func addImage(_ sender: Any) {
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let img = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            itemImage.image = img
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    func encodeImage(img: UIImage?){
+        let imageData:NSData = UIImagePNGRepresentation(img!)! as NSData
+        let strBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
+        encodedString = strBase64
+    }
     
     @IBAction func save(_ sender: Any) {
         // Validation for all fields
@@ -67,11 +88,12 @@ class ItemDetailsVC: UIViewController {
     
     func postNewItem(){
         let postNewItemURL = NEW_ITEM
+        encodeImage(img: itemImage.image)
         let params = [
             "title":titleTxtFld.text!,
             "price":priceTxtFld.text!,
             "description":descriptionTxtFld.text!,
-            "picture":"",
+            "picture":encodedString,
             "supplier":supplierTxtFld.text!,
         ] as [String: Any]
         
@@ -126,7 +148,18 @@ class ItemDetailsVC: UIViewController {
         
     }
     
-    
+    @IBAction func deleteItem(_ sender: Any) {
+        //API Call should be implemented first
+        
+        let priceString: String = (priceTxtFld.text?.replacingOccurrences(of: "$", with: ""))!
+        let params = [
+            "title":titleTxtFld.text!,
+            "price":priceString,
+            "description":descriptionTxtFld.text!,
+            "picture":"",
+            "supplier":supplierTxtFld.text!,
+            ] as [String: Any]
+    }
     
     func alertMessage(title: String, msg: String) {
         // create the alert

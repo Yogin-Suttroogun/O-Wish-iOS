@@ -336,20 +336,19 @@
                                 <rect key="frame" x="15" y="85" width="345" height="255"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGa-Ah-9as">
-                                        <rect key="frame" x="8" y="20" width="100" height="100"/>
+                                        <rect key="frame" x="15" y="20" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="1uY-DX-nt1"/>
                                             <constraint firstAttribute="width" constant="100" id="47y-gI-gVc"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Fbr-nh-uVW"/>
                                             <constraint firstAttribute="height" constant="100" id="MZf-Za-L8W"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="addImage:" destination="nP4-QR-YZr" eventType="touchUpInside" id="wry-8y-z0L"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SI8-E7-x8N">
                                         <rect key="frame" x="15" y="20" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Mvo-6R-1ei"/>
                                             <constraint firstAttribute="height" constant="100" id="S5N-Mg-Lt5"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Two-Vz-fuD"/>
                                             <constraint firstAttribute="width" constant="100" id="a4F-lc-oKO"/>
                                         </constraints>
                                     </imageView>
@@ -444,7 +443,7 @@
                                     <constraint firstItem="SI8-E7-x8N" firstAttribute="top" secondItem="01g-J6-am2" secondAttribute="top" constant="20" id="89w-21-RQm"/>
                                     <constraint firstItem="hB9-XN-Apy" firstAttribute="leading" secondItem="SI8-E7-x8N" secondAttribute="trailing" constant="15" id="8Eo-cj-Z3q"/>
                                     <constraint firstAttribute="trailing" secondItem="6uF-a8-scv" secondAttribute="trailing" constant="15" id="BF8-4N-fZs"/>
-                                    <constraint firstItem="fGa-Ah-9as" firstAttribute="leading" secondItem="01g-J6-am2" secondAttribute="leading" constant="8" id="HTv-jd-VqY"/>
+                                    <constraint firstItem="fGa-Ah-9as" firstAttribute="leading" secondItem="01g-J6-am2" secondAttribute="leading" constant="15" id="HTv-jd-VqY"/>
                                     <constraint firstItem="hzo-2R-x8r" firstAttribute="leading" secondItem="01g-J6-am2" secondAttribute="leading" constant="15" id="Kwq-fo-zCl"/>
                                     <constraint firstItem="fGa-Ah-9as" firstAttribute="top" secondItem="01g-J6-am2" secondAttribute="top" constant="20" id="QEO-s8-tCs"/>
                                     <constraint firstAttribute="trailing" secondItem="hzo-2R-x8r" secondAttribute="trailing" constant="15" id="STn-I6-dxS"/>
@@ -499,10 +498,14 @@
                     <navigationItem key="navigationItem" id="VnM-y5-1OQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="G5Q-By-Izr">
                             <color key="tintColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="deleteItem:" destination="nP4-QR-YZr" id="97f-ZB-AIk"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTxtFld" destination="ns8-RJ-rEo" id="XMx-5z-frB"/>
+                        <outlet property="itemImage" destination="SI8-E7-x8N" id="NXA-rK-eXX"/>
                         <outlet property="priceTxtFld" destination="hB9-XN-Apy" id="ap9-k2-31B"/>
                         <outlet property="supplierTxtFld" destination="hzo-2R-x8r" id="fVg-TT-iIQ"/>
                         <outlet property="titleTxtFld" destination="6uF-a8-scv" id="4cS-hJ-Agd"/>
