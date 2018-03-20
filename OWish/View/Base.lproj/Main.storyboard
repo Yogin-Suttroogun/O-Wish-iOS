@@ -345,7 +345,7 @@
                                             <action selector="addImage:" destination="nP4-QR-YZr" eventType="touchUpInside" id="wry-8y-z0L"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SI8-E7-x8N">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addImage" translatesAutoresizingMaskIntoConstraints="NO" id="SI8-E7-x8N">
                                         <rect key="frame" x="15" y="20" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="S5N-Mg-Lt5"/>
@@ -483,7 +483,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="01g-J6-am2" firstAttribute="top" secondItem="PPf-1V-xQe" secondAttribute="top" constant="65" id="3xC-CK-MJc"/>
                             <constraint firstItem="01g-J6-am2" firstAttribute="centerX" secondItem="1Fo-O5-rUE" secondAttribute="centerX" id="JgH-Ic-nxX"/>
@@ -585,7 +584,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-Yo-p3Z">
-                                <rect key="frame" x="140" y="232" width="96.5" height="37"/>
+                                <rect key="frame" x="139.5" y="232" width="96.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -813,7 +812,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-ww-fwW">
-                                <rect key="frame" x="106" y="232" width="163.5" height="37"/>
+                                <rect key="frame" x="106.5" y="232" width="163.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -960,8 +959,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addImage" width="50" height="50"/>
         <image name="aladin" width="567" height="567"/>
-        <image name="background" width="500" height="374"/>
         <image name="background1" width="736" height="1102"/>
         <image name="background2" width="800" height="1280"/>
         <image name="background3" width="853" height="1280"/>

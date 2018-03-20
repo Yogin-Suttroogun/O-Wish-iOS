@@ -84,11 +84,28 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
         
         if itemToEdit == nil{
-            postNewItem()
+            checkProductTitleExistance()
         } else{
             updateExistingItem()
         }
         
+    }
+    
+    func checkProductTitleExistance(){
+        let handlingWhiteSpaces: String = (titleTxtFld.text?.replacingOccurrences(of: " ", with: "%20"))!
+        let productTitleURL = "\(GET_PRODUCT)/\(handlingWhiteSpaces)"
+        Alamofire.request(productTitleURL, method: .get)
+            .validate()
+            .responseJSON { (response) in
+                
+                print(response)
+                let resultValue = response.result.value! as! Bool
+                if resultValue{
+                   self.alertMessage(title: "Invalid", msg: "Product title already exist. Please enter another one.")
+                }else{
+                    self.postNewItem()
+                }
+        }
     }
     
     func postNewItem(){

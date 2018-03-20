@@ -21,15 +21,10 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         tableView.delegate = self
         
-        
         product.downloadProductItem { (product) in
             self.products = product
             self.tableView.reloadData()
         }
-    }
-    
-    func updateUI(){
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
