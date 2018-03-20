@@ -155,16 +155,23 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func deleteItem(_ sender: Any) {
-        //API Call should be implemented first
-        
-        let priceString: String = (priceTxtFld.text?.replacingOccurrences(of: "$", with: ""))!
-        let params = [
-            "title":titleTxtFld.text!,
-            "price":priceString,
-            "description":descriptionTxtFld.text!,
-            "picture":"",
-            "supplier":supplierTxtFld.text!,
-            ] as [String: Any]
+        let deleteItemURL = "\(DELETE_ITEM)/\(titleTxtFld.text!)"
+        Alamofire.request(deleteItemURL, method: .delete)
+            .validate()
+            .responseJSON { (response) in
+                let resultValue = response.result.value! as! Bool
+                if resultValue{
+                    //perform navigation
+                    let alert = UIAlertController(title: "Success", message: "Your item has been deleted!", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+                        self.performSegue(withIdentifier: "adminConsole", sender: nil)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }else{
+                    self.alertMessage(title: "Invalid", msg: "An error has occured. Please try again later.")
+                }
+        }
     }
     
     func alertMessage(title: String, msg: String) {
