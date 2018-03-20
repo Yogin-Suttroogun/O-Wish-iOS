@@ -17,11 +17,27 @@ class ItemDetailsVC: UIViewController {
     @IBOutlet weak var descriptionTxtFld: DesignableTextField!
     @IBOutlet weak var supplierTxtFld: DesignableTextField!
     
+    var itemToEdit: Product?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 200/255.0, green: 5/255.0, blue: 5/255.0, alpha: 0.5)
         if let topItem = self.navigationController?.navigationBar.topItem{
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        }
+        
+        if itemToEdit != nil{
+            loadItemData()
+        }
+    }
+    
+    func loadItemData(){
+        if let item = itemToEdit{
+            titleTxtFld.text = item._title
+            priceTxtFld.text = "$ \(item._price!)"
+            descriptionTxtFld.text = item._description
+            supplierTxtFld.text = item._supplier
+            titleTxtFld.isUserInteractionEnabled = false
         }
     }
     
@@ -41,7 +57,11 @@ class ItemDetailsVC: UIViewController {
             return
         }
         
-        postNewItem()
+        if itemToEdit == nil{
+            postNewItem()
+        } else{
+            updateExistingItem()
+        }
         
     }
     
@@ -63,6 +83,37 @@ class ItemDetailsVC: UIViewController {
                     //perform navigation
                     
                     let alert = UIAlertController(title: "Success", message: "One item has been successfully inserted.", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+                        self.performSegue(withIdentifier: "adminConsole", sender: nil)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }else{
+                    self.alertMessage(title: "Invalid", msg: "An error has occured. Please try again later.")
+                }
+        }
+        
+    }
+    
+    func updateExistingItem(){
+        let updateItemURL = UPDATE_ITEM
+        let priceString: String = (priceTxtFld.text?.replacingOccurrences(of: "$", with: ""))!
+        let params = [
+            "title":titleTxtFld.text!,
+            "price":priceString,
+            "description":descriptionTxtFld.text!,
+            "picture":"",
+            "supplier":supplierTxtFld.text!,
+            ] as [String: Any]
+        
+        Alamofire.request(updateItemURL, method: .put, parameters: params, encoding: JSONEncoding.default , headers: headersKeyValue)
+            .validate()
+            .responseJSON { (response) in
+                let resultValue = response.result.value! as! Bool
+                if resultValue {
+                    //perform navigation
+                    
+                    let alert = UIAlertController(title: "Success", message: "Your item has been updated!", preferredStyle: UIAlertControllerStyle.alert)
                     
                     alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
                         self.performSegue(withIdentifier: "adminConsole", sender: nil)

@@ -48,5 +48,22 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return ItemCell()
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if  products.count > 0 {
+            let item = products[indexPath.row]
+            performSegue(withIdentifier: "editItemDetails", sender: item)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "editItemDetails"{
+            if let destination = segue.destination as? ItemDetailsVC{
+                if let item = sender as? Product{
+                    destination.itemToEdit = item
+                }
+            }
+        }
+    }
 }
 

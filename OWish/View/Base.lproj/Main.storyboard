@@ -211,7 +211,7 @@
                                 <rect key="frame" x="16" y="80" width="343" height="587"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="160" id="puf-nj-okO" customClass="ItemCell" customModule="OWish" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="160" id="puf-nj-okO" customClass="ItemCell" customModule="OWish" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="puf-nj-okO" id="jVP-kw-AN4">
@@ -311,13 +311,13 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="UFO-8F-kHX">
                             <color key="tintColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <segue destination="nP4-QR-YZr" kind="show" id="0iu-aL-ZaO"/>
+                                <segue destination="nP4-QR-YZr" kind="show" identifier="addItemDetails" id="0iu-aL-ZaO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="CZB-p9-7m5" id="8tW-Yq-1XC"/>
-                        <segue destination="nP4-QR-YZr" kind="show" id="DQz-3i-WDj"/>
+                        <segue destination="nP4-QR-YZr" kind="show" identifier="editItemDetails" id="DQz-3i-WDj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blX-x0-YAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -511,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usX-ke-2XI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313" y="1224"/>
+            <point key="canvasLocation" x="1313" y="1316"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Q6I-em-XT6">
@@ -582,7 +582,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-Yo-p3Z">
-                                <rect key="frame" x="139.5" y="232" width="96.5" height="37"/>
+                                <rect key="frame" x="140" y="232" width="96.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -810,7 +810,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-ww-fwW">
-                                <rect key="frame" x="106.5" y="232" width="163.5" height="37"/>
+                                <rect key="frame" x="106" y="232" width="163.5" height="37"/>
                                 <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -969,7 +969,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WYf-Ar-il3"/>
-        <segue reference="0iu-aL-ZaO"/>
+        <segue reference="DQz-3i-WDj"/>
         <segue reference="agY-Hp-nji"/>
         <segue reference="Zso-od-uWD"/>
     </inferredMetricsTieBreakers>

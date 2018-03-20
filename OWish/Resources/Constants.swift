@@ -8,13 +8,14 @@
 
 import Foundation
 
-let BASE_URL = "http://192.168.100.3:8080/"
+let BASE_URL = "http://192.168.2.11:8080/"
 let CHECK_USER_URL = "users/"
 let CHECK_ADMIN_URL = "admins/"
 let POST_NEW_USER_URL = "newUser"
 let PRODUCTS = "products"
 let RESET_PASSWORD_URL = "resetPassword"
 let NEW_ITEM_URL = "/newItem"
+let UPDATE_ITEM_URL = "/updateItem"
 
 let headersKeyValue = [
     "Content-Type": "application/json",
@@ -29,5 +30,6 @@ let POST_NEW_USER = "\(BASE_URL)\(CHECK_USER_URL)\(POST_NEW_USER_URL)"
 let GET_PRODUCT = "\(BASE_URL)\(PRODUCTS)"
 let RESET_PASSWORD = "\(BASE_URL)\(CHECK_USER_URL)\(RESET_PASSWORD_URL)"
 let NEW_ITEM = "\(BASE_URL)\(PRODUCTS)\(NEW_ITEM_URL)"
+let UPDATE_ITEM = "\(BASE_URL)\(PRODUCTS)\(UPDATE_ITEM_URL)"
 
 
