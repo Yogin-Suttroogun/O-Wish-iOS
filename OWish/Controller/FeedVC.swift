@@ -91,10 +91,5 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    @IBAction func logOut(_ sender: Any) {
-        performSegue(withIdentifier: "logOut", sender: nil)
-    }
-    
-    
 }
 
