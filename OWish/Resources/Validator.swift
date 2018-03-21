@@ -41,13 +41,12 @@ class Validator: NSObject {
      */
     func isValidName(string:String) -> Bool {
         let emailRegEx = "[A-zÀ-ÿ ]+"
-        
         let emailValidate = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailValidate.evaluate(with: string)
     }
     
     func isAlphaNumeric(string : String) -> Bool{
-        let AlphaRegEx = "^[a-zA-Z0-9\\s]{1,}$"
+        let AlphaRegEx = "^[a-zA-Z0-9\\s.]{1,}$"
         let validateAlphaRegEx = NSPredicate(format: "SELF MATCHES %@", AlphaRegEx)
         return validateAlphaRegEx.evaluate(with: string)
     }

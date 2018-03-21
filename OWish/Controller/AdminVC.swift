@@ -37,7 +37,12 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func back(sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "logOutAdmin", sender: nil)
+        let alert = UIAlertController(title: "Log out", message: "Are you sure you want to exit the app?", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+            self.performSegue(withIdentifier: "logOutAdmin", sender: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func startLoading(){

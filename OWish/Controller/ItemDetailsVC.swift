@@ -89,8 +89,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         // Validation for all fields
         let isTitleValid = Validator().isAlphaNumeric(string: titleTxtFld.text!)
         let isPriceValid = Validator().isPositiveInteger(integerValue: priceTxtFld.text!)
-        let isDescriptionValid = Validator().isValidName(string: descriptionTxtFld.text!)
-        let isSupplierValid = Validator().isValidName(string: supplierTxtFld.text!)
+        let isDescriptionValid = Validator().isAlphaNumeric(string: descriptionTxtFld.text!)
+        let isSupplierValid = Validator().isAlphaNumeric(string: supplierTxtFld.text!)
         
         if !isTitleValid{
             alertMessage(title: "Invalid", msg: "Please enter a valid title")

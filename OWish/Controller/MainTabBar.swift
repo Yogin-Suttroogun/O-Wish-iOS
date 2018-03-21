@@ -20,7 +20,12 @@ class MainTabBar: UITabBarController {
     }
     
     func back(sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "logOutUser", sender: nil)
+        let alert = UIAlertController(title: "Log out", message: "Are you sure you want to exit the app?", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+            self.performSegue(withIdentifier: "logOutUser", sender: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
 }
