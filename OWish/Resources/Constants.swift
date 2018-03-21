@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Chang to your ip address
 let BASE_URL = "http://192.168.100.3:8080/"
 let CHECK_USER_URL = "users/"
 let CHECK_ADMIN_URL = "admins/"
