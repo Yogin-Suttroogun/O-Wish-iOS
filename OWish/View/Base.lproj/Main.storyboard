@@ -642,7 +642,6 @@
                     <navigationItem key="navigationItem" title="News Feed" id="GAz-af-m5p"/>
                     <connections>
                         <outlet property="tableView" destination="YeI-Oe-J1U" id="rxP-NW-r6X"/>
-                        <segue destination="eSl-ig-lHK" kind="show" identifier="logOutUser" id="E2R-dN-QmT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wY4-nM-Fce" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -662,6 +661,7 @@
                     <connections>
                         <segue destination="snh-Nr-5Vh" kind="relationship" relationship="viewControllers" id="6ss-C8-uLS"/>
                         <segue destination="MnF-T8-cwD" kind="relationship" relationship="viewControllers" id="bLr-ta-m1B"/>
+                        <segue destination="eSl-ig-lHK" kind="show" identifier="logOutUser" id="jQU-pz-kwr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQt-jl-Qag" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1129,6 +1129,6 @@
         <segue reference="6ss-C8-uLS"/>
         <segue reference="0iu-aL-ZaO"/>
         <segue reference="lvK-XY-44w"/>
-        <segue reference="E2R-dN-QmT"/>
+        <segue reference="jQU-pz-kwr"/>
     </inferredMetricsTieBreakers>
 </document>
