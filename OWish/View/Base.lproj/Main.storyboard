@@ -65,7 +65,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ys@admin.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-QY-23m" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="yo.suttroogun@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-QY-23m" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="359" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -195,7 +195,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Uy8-nr-e1Q">
-                                <rect key="frame" x="63" y="35" width="249" height="26"/>
+                                <rect key="frame" x="63" y="79" width="249" height="26"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="2jk-zE-S42"/>
@@ -208,7 +208,7 @@
                                 <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="0.87312714039999995" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CZB-p9-7m5">
-                                <rect key="frame" x="16" y="80" width="343" height="587"/>
+                                <rect key="frame" x="16" y="124" width="343" height="543"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="160" id="puf-nj-okO" customClass="ItemCell" customModule="OWish" customModuleProvider="target">
@@ -333,7 +333,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01g-J6-am2">
-                                <rect key="frame" x="15" y="85" width="345" height="255"/>
+                                <rect key="frame" x="15" y="129" width="345" height="255"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGa-Ah-9as">
                                         <rect key="frame" x="15" y="20" width="100" height="100"/>
@@ -463,7 +463,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-AE-geG" customClass="DesignableButton" customModule="OWish" customModuleProvider="target">
-                                <rect key="frame" x="80" y="370" width="215" height="35"/>
+                                <rect key="frame" x="80" y="414" width="215" height="35"/>
                                 <color key="backgroundColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="i4o-B5-s7J"/>
@@ -516,17 +516,17 @@
             </objects>
             <point key="canvasLocation" x="1313" y="1316"/>
         </scene>
-        <!--View Controller-->
+        <!--ProfileVC-->
         <scene sceneID="Q6I-em-XT6">
             <objects>
-                <viewController id="MnF-T8-cwD" sceneMemberID="viewController">
+                <viewController id="MnF-T8-cwD" customClass="ProfileVC" customModule="OWish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rtn-RA-EEe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PSS-As-kGE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="dgi-fR-vIR"/>
+                    <tabBarItem key="tabBarItem" title="" image="userfeed" id="dgi-fR-vIR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h26-z9-ZEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -556,6 +556,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="DZS-UO-rIG" kind="relationship" relationship="viewControllers" id="6ss-C8-uLS"/>
@@ -969,11 +970,12 @@
         <image name="newsfeed" width="48" height="32"/>
         <image name="password" width="256" height="256"/>
         <image name="user" width="256" height="256"/>
+        <image name="userfeed" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WYf-Ar-il3"/>
+        <segue reference="6ss-C8-uLS"/>
         <segue reference="DQz-3i-WDj"/>
-        <segue reference="agY-Hp-nji"/>
+        <segue reference="lvK-XY-44w"/>
         <segue reference="Zso-od-uWD"/>
     </inferredMetricsTieBreakers>
 </document>
