@@ -10,13 +10,14 @@ import UIKit
 
 class NewsFeedCell: UITableViewCell {
     
-    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productDescription: UILabel!
+    @IBOutlet weak var productPrice: UILabel!
     
     func configureCell(product: Product){
         productTitle.text = "\(product._title!)"
+        productPrice.text = "$ \(product._price!)"
         productDescription.text = "\(product._description!)"
         
         if let decodedData = Data(base64Encoded: product._picture, options: .ignoreUnknownCharacters){
@@ -24,5 +25,7 @@ class NewsFeedCell: UITableViewCell {
             productImage.image = image
         }
     }
+    
+    
     
 }

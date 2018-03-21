@@ -23,6 +23,24 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.products = product
             self.tableView.reloadData()
         }
+        
+        self.tableView.addSubview(self.refreshControl)
+    }
+    
+    lazy var refreshControl : UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(FeedVC.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        refreshControl.tintColor = UIColor.red
+        return refreshControl
+    }()
+    
+    func handleRefresh(_ refreshControl: UIRefreshControl){
+        product.downloadProductItem { (product) in
+            self.products = product
+            self.tableView.reloadData()
+        }
+        
+        refreshControl.endRefreshing()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
