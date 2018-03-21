@@ -28,6 +28,7 @@
 		47BC1FFA205989D100C07A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BC1FF8205989D100C07A8E /* LaunchScreen.storyboard */; };
 		47FE55222062052F007D7ED0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE55212062052F007D7ED0 /* ProfileVC.swift */; };
 		47FE552420621239007D7ED0 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE552320621239007D7ED0 /* MainTabBar.swift */; };
+		47FE552620621B0D007D7ED0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE552520621B0D007D7ED0 /* CircleView.swift */; };
 		5B14FBE9D94ECFD010847702 /* Pods_OWish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E09C77489F7D1C42C34D1CB /* Pods_OWish.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		47BC1FFB205989D100C07A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47FE55212062052F007D7ED0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		47FE552320621239007D7ED0 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		47FE552520621B0D007D7ED0 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		6E09C77489F7D1C42C34D1CB /* Pods_OWish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OWish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A0B24CAFC260391D586A4D /* Pods-OWish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OWish/Pods-OWish.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				476B5DA9205A09470023233F /* Utility.swift */,
 				4710BBDF205C4A0E0048CD28 /* Constants.swift */,
 				4716C0B9205E720000B33FFF /* MaterialView.swift */,
+				47FE552520621B0D007D7ED0 /* CircleView.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FE552620621B0D007D7ED0 /* CircleView.swift in Sources */,
 				473919E520598C9500259EF2 /* SignInVC.swift in Sources */,
 				473919E720598CB600259EF2 /* SignUpVC.swift in Sources */,
 				473919F120598D8400259EF2 /* DesignableTextField.swift in Sources */,
