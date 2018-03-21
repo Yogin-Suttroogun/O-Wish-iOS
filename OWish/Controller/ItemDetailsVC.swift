@@ -17,6 +17,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var descriptionTxtFld: DesignableTextField!
     @IBOutlet weak var supplierTxtFld: DesignableTextField!
     
+    let activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView();
+    
     var itemToEdit: Product?
     var imagePicker: UIImagePickerController!
     var encodedString: String = ""
@@ -49,6 +51,21 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
                 itemImage.image = image
             }
         }
+    }
+    
+    func startLoading(){
+        activityIndicator.center = self.view.center;
+        activityIndicator.hidesWhenStopped = true;
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray;
+        view.addSubview(activityIndicator);
+        
+        activityIndicator.startAnimating();
+        UIApplication.shared.beginIgnoringInteractionEvents();
+    }
+    
+    func stopLoading(){
+        activityIndicator.stopAnimating();
+        UIApplication.shared.endIgnoringInteractionEvents();
     }
     
     @IBAction func addImage(_ sender: Any) {
@@ -96,8 +113,10 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
         
         if itemToEdit == nil{
+            startLoading()
             checkProductTitleExistance()
         } else{
+            startLoading()
             updateExistingItem()
         }
         
@@ -115,11 +134,10 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         Alamofire.request(productTitleURL, method: .get)
             .validate()
             .responseJSON { (response) in
-                
-                print(response)
                 let resultValue = response.result.value! as! Bool
                 if resultValue{
-                   self.alertMessage(title: "Invalid", msg: "Product title already exist. Please enter another one.")
+                    self.stopLoading()
+                    self.alertMessage(title: "Invalid", msg: "Product title already exist. Please enter another one.")
                 }else{
                     self.postNewItem()
                 }
@@ -141,6 +159,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             .validate()
             .responseJSON { (response) in
                 let resultValue = response.result.value! as! Bool
+                self.stopLoading()
                 if resultValue {
                     //perform navigation
                     
@@ -173,6 +192,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             .validate()
             .responseJSON { (response) in
                 let resultValue = response.result.value! as! Bool
+                self.stopLoading()
                 if resultValue {
                     //perform navigation
                     
@@ -190,11 +210,14 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func deleteItem(_ sender: Any) {
+        self.startLoading()
+        
         let deleteItemURL = "\(DELETE_ITEM)/\(titleTxtFld.text!)"
         Alamofire.request(deleteItemURL, method: .delete)
             .validate()
             .responseJSON { (response) in
                 let resultValue = response.result.value! as! Bool
+                self.stopLoading()
                 if resultValue{
                     //perform navigation
                     let alert = UIAlertController(title: "Success", message: "Your item has been deleted!", preferredStyle: UIAlertControllerStyle.alert)

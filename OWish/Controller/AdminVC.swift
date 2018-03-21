@@ -14,6 +14,8 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var product = Product()
     var products = [Product]()
     
+    let activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
@@ -21,12 +23,28 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         tableView.delegate = self
         
+        startLoading()
         product.downloadProductItem { (product) in
             self.products = product
             self.tableView.reloadData()
         }
         
         self.tableView.addSubview(self.refreshControl)
+    }
+    
+    func startLoading(){
+        activityIndicator.center = self.view.center;
+        activityIndicator.hidesWhenStopped = true;
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray;
+        view.addSubview(activityIndicator);
+        
+        activityIndicator.startAnimating();
+        UIApplication.shared.beginIgnoringInteractionEvents();
+    }
+    
+    func stopLoading(){
+        activityIndicator.stopAnimating();
+        UIApplication.shared.endIgnoringInteractionEvents();
     }
     
     lazy var refreshControl : UIRefreshControl = {
@@ -56,6 +74,7 @@ class AdminVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as? ItemCell{
             let product = products[indexPath.row]
             cell.configureCell(product: product)
+            stopLoading()
             return cell
         }else{
             return ItemCell()
