@@ -41,7 +41,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     func loadItemData(){
         if let item = itemToEdit{
             titleTxtFld.text = item._title
-            priceTxtFld.text = "$ \(item._price!)"
+            priceTxtFld.text = "\(item._price!)"
             descriptionTxtFld.text = item._description
             supplierTxtFld.text = item._supplier
             titleTxtFld.isUserInteractionEnabled = false
@@ -178,11 +178,10 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     func updateExistingItem(){
         let updateItemURL = UPDATE_ITEM
-        let priceString: String = (priceTxtFld.text?.replacingOccurrences(of: "$", with: ""))!
         encodeImage(img: itemImage.image)
         let params = [
             "title":titleTxtFld.text!,
-            "price":priceString,
+            "price":priceTxtFld.text!,
             "description":descriptionTxtFld.text!,
             "picture":encodedString,
             "supplier":supplierTxtFld.text!,
@@ -211,8 +210,14 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     @IBAction func deleteItem(_ sender: Any) {
         self.startLoading()
+        let handlingWhiteSpaces: String
+        if (titleTxtFld.text == nil || titleTxtFld.text == " "){
+            handlingWhiteSpaces = ""
+        } else{
+            handlingWhiteSpaces = (self.titleTxtFld.text?.replacingOccurrences(of: " ", with: "%20"))!
+        }
         
-        let deleteItemURL = "\(DELETE_ITEM)/\(titleTxtFld.text!)"
+        let deleteItemURL = "\(DELETE_ITEM)/\(handlingWhiteSpaces)"
         Alamofire.request(deleteItemURL, method: .delete)
             .validate()
             .responseJSON { (response) in

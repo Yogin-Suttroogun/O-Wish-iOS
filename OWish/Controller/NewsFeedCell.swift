@@ -17,7 +17,7 @@ class NewsFeedCell: UITableViewCell {
     
     func configureCell(product: Product){
         productTitle.text = "\(product._title!)"
-        productPrice.text = "$ \(product._price!)"
+        productPrice.text = "\(product._price!)"
         productDescription.text = "\(product._description!)"
         
         if let decodedData = Data(base64Encoded: product._picture, options: .ignoreUnknownCharacters){

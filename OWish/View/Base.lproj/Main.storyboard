@@ -31,7 +31,7 @@
                             <imageView userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="E1h-wA-pjd" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123@" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iR2-YP-SJB" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iR2-YP-SJB" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="375" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +65,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ys@admin.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-QY-23m" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-QY-23m" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="315" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -184,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODc-SM-yGZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454" y="-218"/>
+            <point key="canvasLocation" x="-55" y="-218"/>
         </scene>
         <!--Admin Console-->
         <scene sceneID="FvC-DI-zp9">
@@ -307,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blX-x0-YAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312.8" y="494.30284857571218"/>
+            <point key="canvasLocation" x="927" y="575"/>
         </scene>
         <!--Item DetailsVC-->
         <scene sceneID="8gD-sO-P96">
@@ -497,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usX-ke-2XI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312.8" y="1315.5922038980511"/>
+            <point key="canvasLocation" x="926" y="1305"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="Q6I-em-XT6">
@@ -525,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h26-z9-ZEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2269.5999999999999" y="112.89355322338831"/>
+            <point key="canvasLocation" x="1790" y="-218"/>
         </scene>
         <!--News Feed-->
         <scene sceneID="jfa-dp-9Cr">
@@ -646,7 +646,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wY4-nM-Fce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.8000000000002" y="-551.87406296851577"/>
+            <point key="canvasLocation" x="2617" y="-995"/>
         </scene>
         <!--Main Tab Bar-->
         <scene sceneID="Do6-Ga-aV4">
@@ -666,7 +666,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQt-jl-Qag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1314" y="-218"/>
+            <point key="canvasLocation" x="926" y="-995"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="BW5-be-74Q">
@@ -710,7 +710,7 @@
                                     <action selector="register:" destination="MdF-tq-Uh9" eventType="touchUpInside" id="D4r-7B-gwA"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123@" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BN-iV-Qbu" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BN-iV-Qbu" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="375" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -730,7 +730,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password123@" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-tX-sA0" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-tX-sA0" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="425" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -750,7 +750,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Keshika" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-Uf-ohY" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqp-Uf-ohY" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="275" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -770,7 +770,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ksuttroogun@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ipt-lv-Vav" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ipt-lv-Vav" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="325" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -828,12 +828,12 @@
                         <outlet property="emailTxtFld" destination="Ipt-lv-Vav" id="Tvm-D7-gRV"/>
                         <outlet property="fullNameTxtFld" destination="mqp-Uf-ohY" id="gH5-jQ-gCd"/>
                         <outlet property="passwordTxtFld" destination="6BN-iV-Qbu" id="N5c-BZ-ZaI"/>
-                        <segue destination="snh-Nr-5Vh" kind="showDetail" identifier="userProfile" id="WYf-Ar-il3"/>
+                        <segue destination="aKc-p1-0pW" kind="show" identifier="userProfile" id="TxX-ze-Uts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlx-Ku-3qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="519"/>
+            <point key="canvasLocation" x="-55" y="577"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="D97-o8-XTm">
@@ -921,7 +921,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0e-l7-9ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1218.4000000000001" y="-219.04047976011995"/>
+            <point key="canvasLocation" x="-1815" y="-218"/>
         </scene>
         <!--Reset PasswordVC-->
         <scene sceneID="HNE-5y-swX">
@@ -947,7 +947,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password1234567!" placeholder="Actual Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNL-YM-m09" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Actual Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNL-YM-m09" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="350" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -967,7 +967,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="yo.suttroogun@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AT5-uf-j7o" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AT5-uf-j7o" customClass="DesignableTextField" customModule="OWish" customModuleProvider="target">
                                 <rect key="frame" x="54" y="300" width="267" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31812830110000001" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1062,7 +1062,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jW5-lw-pxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-650" y="519"/>
+            <point key="canvasLocation" x="-1042" y="576"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t6t-dc-wKe">
@@ -1085,7 +1085,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rh3-uw-ltS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-318" y="-219"/>
+            <point key="canvasLocation" x="-1042" y="-218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Td-cd-bta">
@@ -1108,7 +1108,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjZ-9G-zLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2268.8000000000002" y="-550.52473763118439"/>
+            <point key="canvasLocation" x="1791" y="-995"/>
         </scene>
     </scenes>
     <resources>
@@ -1126,9 +1126,9 @@
         <image name="userfeed" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6ss-C8-uLS"/>
+        <segue reference="TxX-ze-Uts"/>
         <segue reference="0iu-aL-ZaO"/>
-        <segue reference="lvK-XY-44w"/>
+        <segue reference="agY-Hp-nji"/>
         <segue reference="jQU-pz-kwr"/>
     </inferredMetricsTieBreakers>
 </document>

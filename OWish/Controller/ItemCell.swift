@@ -17,7 +17,7 @@ class ItemCell: UITableViewCell {
     
     func configureCell(product: Product){
         itemTitle.text = "\(product._title!)"
-        itemPrice.text = "$ \(product._price!)"
+        itemPrice.text = "\(product._price!)"
         itemDescription.text = "\(product._description!)"
         
         if let decodedData = Data(base64Encoded: product._picture, options: .ignoreUnknownCharacters){
