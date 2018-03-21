@@ -46,10 +46,16 @@ class Validator: NSObject {
         return emailValidate.evaluate(with: string)
     }
     
-//    func alphaNumeric(string : String) -> Bool{
-//        let RegEx = "^[a-zA-Z0-9\s.\-]+$"
-        
-//        let validate = NSPredicate(format: "SELF MATCHES %@", RegEx)
-//        return validate.evaluate(with: string)
-//    }
+    func isAlphaNumeric(string : String) -> Bool{
+        let AlphaRegEx = "^[a-zA-Z0-9\\s]{1,}$"
+        let validateAlphaRegEx = NSPredicate(format: "SELF MATCHES %@", AlphaRegEx)
+        return validateAlphaRegEx.evaluate(with: string)
+    }
+    
+    func isPositiveInteger(integerValue: String) -> Bool {
+        let numberRegEx = "[1-9][0-9]{0,}"
+        let numberToValidate = NSPredicate(format: "SELF MATCHES %@", numberRegEx)
+        return numberToValidate.evaluate(with: integerValue)
+    }
+    
 }

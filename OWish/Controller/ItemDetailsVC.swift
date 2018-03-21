@@ -70,8 +70,20 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     @IBAction func save(_ sender: Any) {
         // Validation for all fields
+        let isTitleValid = Validator().isAlphaNumeric(string: titleTxtFld.text!)
+        let isPriceValid = Validator().isPositiveInteger(integerValue: priceTxtFld.text!)
         let isDescriptionValid = Validator().isValidName(string: descriptionTxtFld.text!)
         let isSupplierValid = Validator().isValidName(string: supplierTxtFld.text!)
+        
+        if !isTitleValid{
+            alertMessage(title: "Invalid", msg: "Please enter a valid title")
+            return
+        }
+        
+        if !isPriceValid{
+            alertMessage(title: "Invalid", msg: "Please enter a valid price.")
+            return
+        }
         
         if !isDescriptionValid {
             alertMessage(title: "Invalid", msg: "Please enter a valid description.")
@@ -92,7 +104,13 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     func checkProductTitleExistance(){
-        let handlingWhiteSpaces: String = (titleTxtFld.text?.replacingOccurrences(of: " ", with: "%20"))!
+        var handlingWhiteSpaces: String
+        if (titleTxtFld.text == nil || titleTxtFld.text == " "){
+            handlingWhiteSpaces = " "
+        } else{
+            handlingWhiteSpaces = (self.titleTxtFld.text?.replacingOccurrences(of: " ", with: "%20"))!
+        }
+        
         let productTitleURL = "\(GET_PRODUCT)/\(handlingWhiteSpaces)"
         Alamofire.request(productTitleURL, method: .get)
             .validate()

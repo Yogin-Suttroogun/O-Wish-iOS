@@ -20,7 +20,6 @@
 		473919F520598E2D00259EF2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919F420598E2D00259EF2 /* DesignableButton.swift */; };
 		473919F72059907600259EF2 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473919F62059907600259EF2 /* ItemDetailsVC.swift */; };
 		476B5DA82059FA020023233F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B5DA72059FA020023233F /* Validator.swift */; };
-		476B5DAA205A09470023233F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B5DA9205A09470023233F /* Utility.swift */; };
 		47AF2FA8205F8CAB0080C61A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AF2FA7205F8CAB0080C61A /* ItemCell.swift */; };
 		47BC1FF0205989D100C07A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC1FEF205989D100C07A8E /* AppDelegate.swift */; };
 		47BC1FF5205989D100C07A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BC1FF3205989D100C07A8E /* Main.storyboard */; };
@@ -48,7 +47,6 @@
 		473919F420598E2D00259EF2 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		473919F62059907600259EF2 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		476B5DA72059FA020023233F /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
-		476B5DA9205A09470023233F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		47AF2FA7205F8CAB0080C61A /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		47BC1FEC205989D100C07A8E /* OWish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BC1FEF205989D100C07A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				473919F020598D8400259EF2 /* DesignableTextField.swift */,
 				473919F420598E2D00259EF2 /* DesignableButton.swift */,
 				476B5DA72059FA020023233F /* Validator.swift */,
-				476B5DA9205A09470023233F /* Utility.swift */,
 				4710BBDF205C4A0E0048CD28 /* Constants.swift */,
 				4716C0B9205E720000B33FFF /* MaterialView.swift */,
 				47FE552520621B0D007D7ED0 /* CircleView.swift */,
@@ -325,7 +322,6 @@
 				476B5DA82059FA020023233F /* Validator.swift in Sources */,
 				473919EB20598D0200259EF2 /* FeedVC.swift in Sources */,
 				47FE552A20623391007D7ED0 /* NewsFeedCell.swift in Sources */,
-				476B5DAA205A09470023233F /* Utility.swift in Sources */,
 				4710BBE0205C4A0E0048CD28 /* Constants.swift in Sources */,
 				47BC1FF0205989D100C07A8E /* AppDelegate.swift in Sources */,
 				473919ED20598D2000259EF2 /* AdminVC.swift in Sources */,
