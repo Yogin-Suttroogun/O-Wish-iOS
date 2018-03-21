@@ -532,7 +532,7 @@
             </objects>
             <point key="canvasLocation" x="2270" y="113"/>
         </scene>
-        <!--FeedVC-->
+        <!--News Feed-->
         <scene sceneID="jfa-dp-9Cr">
             <objects>
                 <viewController id="DZS-UO-rIG" customClass="FeedVC" customModule="OWish" customModuleProvider="target" sceneMemberID="viewController">
@@ -542,11 +542,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vVY-pO-ce6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="newsfeed" id="5bZ-yB-RHG"/>
+                    <navigationItem key="navigationItem" title="News Feed" id="GAz-af-m5p">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="nOD-hH-5o6">
+                            <color key="tintColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wY4-nM-Fce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="-550"/>
+            <point key="canvasLocation" x="3026" y="-551"/>
         </scene>
         <!--Main Tab Bar-->
         <scene sceneID="Do6-Ga-aV4">
@@ -559,7 +563,7 @@
                         <color key="selectedImageTintColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="DZS-UO-rIG" kind="relationship" relationship="viewControllers" id="6ss-C8-uLS"/>
+                        <segue destination="snh-Nr-5Vh" kind="relationship" relationship="viewControllers" id="6ss-C8-uLS"/>
                         <segue destination="MnF-T8-cwD" kind="relationship" relationship="viewControllers" id="bLr-ta-m1B"/>
                     </connections>
                 </tabBarController>
@@ -727,7 +731,7 @@
                         <outlet property="emailTxtFld" destination="Ipt-lv-Vav" id="Tvm-D7-gRV"/>
                         <outlet property="fullNameTxtFld" destination="mqp-Uf-ohY" id="gH5-jQ-gCd"/>
                         <outlet property="passwordTxtFld" destination="6BN-iV-Qbu" id="N5c-BZ-ZaI"/>
-                        <segue destination="DZS-UO-rIG" kind="showDetail" identifier="userProfile" id="WYf-Ar-il3"/>
+                        <segue destination="snh-Nr-5Vh" kind="showDetail" identifier="userProfile" id="WYf-Ar-il3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlx-Ku-3qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -958,6 +962,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rh3-uw-ltS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-318" y="-219"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Td-cd-bta">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="snh-Nr-5Vh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="newsfeed" id="5bZ-yB-RHG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b0I-q2-W5j">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="22"/>
+                            <color key="textColor" red="0.7843137255" green="0.019607843140000001" blue="0.019607843140000001" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DZS-UO-rIG" kind="relationship" relationship="rootViewController" id="8IJ-1b-q1e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjZ-9G-zLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268.8000000000002" y="-550.52473763118439"/>
         </scene>
     </scenes>
     <resources>
