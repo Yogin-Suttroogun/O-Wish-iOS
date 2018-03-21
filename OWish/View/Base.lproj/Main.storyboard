@@ -318,6 +318,7 @@
                     <connections>
                         <outlet property="tableView" destination="CZB-p9-7m5" id="8tW-Yq-1XC"/>
                         <segue destination="nP4-QR-YZr" kind="show" identifier="editItemDetails" id="DQz-3i-WDj"/>
+                        <segue destination="eSl-ig-lHK" kind="show" identifier="logOutAdmin" id="sEl-dE-7ig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blX-x0-YAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -523,6 +524,15 @@
                     <view key="view" contentMode="scaleToFill" id="rtn-RA-EEe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coming Soon!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HO-rO-v28">
+                                <rect key="frame" x="125" y="248" width="124" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AffectionatelyYours" family="Affectionately Yours" pointSize="32"/>
+                                <color key="textColor" red="0.7843137255" green="0.019607843140000001" blue="0.019607843140000001" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PSS-As-kGE"/>
                     </view>
@@ -530,7 +540,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h26-z9-ZEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="113"/>
+            <point key="canvasLocation" x="2269.5999999999999" y="112.89355322338831"/>
         </scene>
         <!--News Feed-->
         <scene sceneID="jfa-dp-9Cr">
@@ -541,7 +551,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YeI-Oe-J1U">
-                                <rect key="frame" x="0.0" y="60" width="375" height="558"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="newsFeedCell" rowHeight="144" id="d8x-0Y-sAT" customClass="NewsFeedCell" customModule="OWish" customModuleProvider="target">
@@ -643,13 +653,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vVY-pO-ce6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="News Feed" id="GAz-af-m5p">
-                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="nOD-hH-5o6">
-                            <color key="tintColor" red="0.78367875649999996" green="0.0177996175" blue="0.02111504912" alpha="0.58977772890000002" colorSpace="custom" customColorSpace="displayP3"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="News Feed" id="GAz-af-m5p"/>
                     <connections>
                         <outlet property="tableView" destination="YeI-Oe-J1U" id="rxP-NW-r6X"/>
+                        <segue destination="eSl-ig-lHK" kind="show" identifier="logOutUser" id="E2R-dN-QmT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wY4-nM-Fce" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1105,9 +1112,10 @@
         <image name="userfeed" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="8IJ-1b-q1e"/>
         <segue reference="6ss-C8-uLS"/>
         <segue reference="0iu-aL-ZaO"/>
         <segue reference="lvK-XY-44w"/>
-        <segue reference="Zso-od-uWD"/>
+        <segue reference="E2R-dN-QmT"/>
     </inferredMetricsTieBreakers>
 </document>

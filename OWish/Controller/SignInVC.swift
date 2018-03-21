@@ -18,6 +18,8 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
     }
     
     @IBAction func login(_ sender: Any) {

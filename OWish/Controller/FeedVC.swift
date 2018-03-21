@@ -18,6 +18,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        let logOutBtn:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.reply, target: self, action: #selector(AdminVC.back))
+        self.navigationItem.leftBarButtonItem = logOutBtn
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor(displayP3Red: 200/255.0, green: 5/255.0, blue: 5/255.0, alpha: 0.5)
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -28,6 +34,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         self.tableView.addSubview(self.refreshControl)
+    }
+    
+    func back(sender: UIBarButtonItem) {
+//        performSegue(withIdentifier: "logOutUser", sender: nil)
+        print("Active")
     }
     
     func startLoading(){
@@ -79,6 +90,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return NewsFeedCell()
         }
     }
+    
+    @IBAction func logOut(_ sender: Any) {
+        performSegue(withIdentifier: "logOut", sender: nil)
+    }
+    
     
 }
 
