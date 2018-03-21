@@ -548,10 +548,10 @@
             </objects>
             <point key="canvasLocation" x="2270" y="-550"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar-->
         <scene sceneID="Do6-Ga-aV4">
             <objects>
-                <tabBarController id="aKc-p1-0pW" sceneMemberID="viewController">
+                <tabBarController id="aKc-p1-0pW" customClass="MainTabBar" customModule="OWish" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="taH-8x-DcL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
