@@ -29,6 +29,7 @@
 		47FE55222062052F007D7ED0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE55212062052F007D7ED0 /* ProfileVC.swift */; };
 		47FE552420621239007D7ED0 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE552320621239007D7ED0 /* MainTabBar.swift */; };
 		47FE552620621B0D007D7ED0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE552520621B0D007D7ED0 /* CircleView.swift */; };
+		47FE552A20623391007D7ED0 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE552920623391007D7ED0 /* NewsFeedCell.swift */; };
 		5B14FBE9D94ECFD010847702 /* Pods_OWish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E09C77489F7D1C42C34D1CB /* Pods_OWish.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		47FE55212062052F007D7ED0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		47FE552320621239007D7ED0 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		47FE552520621B0D007D7ED0 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		47FE552920623391007D7ED0 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		6E09C77489F7D1C42C34D1CB /* Pods_OWish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OWish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A0B24CAFC260391D586A4D /* Pods-OWish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OWish/Pods-OWish.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				47AF2FA7205F8CAB0080C61A /* ItemCell.swift */,
 				47FE55212062052F007D7ED0 /* ProfileVC.swift */,
 				47FE552320621239007D7ED0 /* MainTabBar.swift */,
+				47FE552920623391007D7ED0 /* NewsFeedCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				47FE55222062052F007D7ED0 /* ProfileVC.swift in Sources */,
 				476B5DA82059FA020023233F /* Validator.swift in Sources */,
 				473919EB20598D0200259EF2 /* FeedVC.swift in Sources */,
+				47FE552A20623391007D7ED0 /* NewsFeedCell.swift in Sources */,
 				476B5DAA205A09470023233F /* Utility.swift in Sources */,
 				4710BBE0205C4A0E0048CD28 /* Constants.swift in Sources */,
 				47BC1FF0205989D100C07A8E /* AppDelegate.swift in Sources */,
